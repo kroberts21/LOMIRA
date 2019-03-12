@@ -1,0 +1,270 @@
+<?xml version="1.0"?>
+
+<Skein rootNode="node-3475">
+    <generator>Inform Mac Client (Inform version 1.65/6.33/6M62)</generator>
+    <item nodeId="node-3475">
+        <command xml:space="preserve">LOMIRA</command>
+        <result xml:space="preserve">
+
+
+LOMIRA
+An Interactive Fiction by kroberts21
+Release 1 / Serial number 190312 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD
+
+HOME
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3498"></child>
+            <child nodeId="node-3478"></child>
+        </children>
+    </item>
+    <item nodeId="node-3478">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">You can't go that way.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3479"></child>
+        </children>
+    </item>
+    <item nodeId="node-3479">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">You can't go that way.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3480"></child>
+        </children>
+    </item>
+    <item nodeId="node-3480">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+City Entrance
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3481"></child>
+        </children>
+    </item>
+    <item nodeId="node-3481">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+SURFACE
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3482"></child>
+        </children>
+    </item>
+    <item nodeId="node-3482">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+City Entrance
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3483"></child>
+        </children>
+    </item>
+    <item nodeId="node-3483">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+HOME
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3484"></child>
+        </children>
+    </item>
+    <item nodeId="node-3484">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+Badlands
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3485"></child>
+        </children>
+    </item>
+    <item nodeId="node-3485">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+Cave Wall
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3486"></child>
+        </children>
+    </item>
+    <item nodeId="node-3486">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">You can't go that way.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3487"></child>
+        </children>
+    </item>
+    <item nodeId="node-3487">
+        <command xml:space="preserve">down</command>
+        <result xml:space="preserve">You can't go that way.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3488"></child>
+        </children>
+    </item>
+    <item nodeId="node-3488">
+        <command xml:space="preserve">up</command>
+        <result xml:space="preserve">You can't go that way.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3489"></child>
+        </children>
+    </item>
+    <item nodeId="node-3489">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+Badlands
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3490"></child>
+        </children>
+    </item>
+    <item nodeId="node-3490">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+HOME
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3491"></child>
+        </children>
+    </item>
+    <item nodeId="node-3491">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+City Entrance
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3492"></child>
+        </children>
+    </item>
+    <item nodeId="node-3492">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+Well
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3493"></child>
+        </children>
+    </item>
+    <item nodeId="node-3493">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+City Entrance
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3494"></child>
+        </children>
+    </item>
+    <item nodeId="node-3494">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+Shop
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3495"></child>
+        </children>
+    </item>
+    <item nodeId="node-3495">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+City Entrance
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3496"></child>
+        </children>
+    </item>
+    <item nodeId="node-3496">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+SURFACE
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3497"></child>
+        </children>
+    </item>
+    <item nodeId="node-3497">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">You can't go that way.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-3498">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+Badlands
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3499"></child>
+        </children>
+    </item>
+    <item nodeId="node-3499">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+Cave Wall
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3504"></child>
+            <child nodeId="node-3500"></child>
+        </children>
+    </item>
+    <item nodeId="node-3500">
+        <command xml:space="preserve">ss</command>
+        <result xml:space="preserve">That's not a verb I recognise.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3501"></child>
+        </children>
+    </item>
+    <item nodeId="node-3501">
+        <command xml:space="preserve">down</command>
+        <result xml:space="preserve">
+Generator
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-3504">
+        <command xml:space="preserve">down</command>
+        <result xml:space="preserve">
+Generator
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3505"></child>
+        </children>
+    </item>
+    <item nodeId="node-3505">
+        <command xml:space="preserve">down</command>
+        <result xml:space="preserve">
+The Core
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+</Skein>
