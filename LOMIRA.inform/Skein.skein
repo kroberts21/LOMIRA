@@ -12,10 +12,13 @@ An Interactive Fiction by kroberts21
 Release 1 / Serial number 190312 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD
 
 HOME
+You can see Backpack (closed) here.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-3498"></child>
+        <children><child nodeId="node-3510"></child>
+            <child nodeId="node-3515"></child>
+            <child nodeId="node-3498"></child>
             <child nodeId="node-3478"></child>
         </children>
     </item>
@@ -263,6 +266,61 @@ Generator
         <command xml:space="preserve">down</command>
         <result xml:space="preserve">
 The Core
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-3515">
+        <command xml:space="preserve">open backpack</command>
+        <result xml:space="preserve">You open Backpack.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-3510">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+Shop
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3511"></child>
+        </children>
+    </item>
+    <item nodeId="node-3511">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+HOME
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3512"></child>
+        </children>
+    </item>
+    <item nodeId="node-3512">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+Well
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3513"></child>
+        </children>
+    </item>
+    <item nodeId="node-3513">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+HOME
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3514"></child>
+        </children>
+    </item>
+    <item nodeId="node-3514">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+City Entrance
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
