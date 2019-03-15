@@ -9,7 +9,7 @@
 
 LOMIRA
 An Interactive Fiction by kroberts21
-Release 1 / Serial number 190312 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD
+Release 1 / Serial number 190314 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD
 
 HOME
 You can see Backpack (closed) here.
@@ -17,6 +17,8 @@ You can see Backpack (closed) here.
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
         <children><child nodeId="node-3510"></child>
+            <child nodeId="node-3529"></child>
+            <child nodeId="node-3541"></child>
             <child nodeId="node-3515"></child>
             <child nodeId="node-3498"></child>
             <child nodeId="node-3478"></child>
@@ -272,7 +274,236 @@ The Core
     </item>
     <item nodeId="node-3515">
         <command xml:space="preserve">open backpack</command>
-        <result xml:space="preserve">You open Backpack.
+        <result xml:space="preserve">You open Backpack, revealing Potato, Metal Bar, Knife and Canvas Sheet.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3517"></child>
+            <child nodeId="node-3522"></child>
+        </children>
+    </item>
+    <item nodeId="node-3522">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+City Entrance
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3523"></child>
+        </children>
+    </item>
+    <item nodeId="node-3523">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">You can't go that way.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3524"></child>
+        </children>
+    </item>
+    <item nodeId="node-3524">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+HOME
+You can see Backpack (in which are Potato, Metal Bar, Knife and Canvas Sheet) here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3525"></child>
+        </children>
+    </item>
+    <item nodeId="node-3525">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+Well
+You can see Bucket here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3526"></child>
+        </children>
+    </item>
+    <item nodeId="node-3526">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+HOME
+You can see Backpack (in which are Potato, Metal Bar, Knife and Canvas Sheet) here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3527"></child>
+        </children>
+    </item>
+    <item nodeId="node-3527">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+Shop
+You can see Flint here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3528"></child>
+        </children>
+    </item>
+    <item nodeId="node-3528">
+        <command xml:space="preserve">get flint</command>
+        <result xml:space="preserve">Taken.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-3517">
+        <command xml:space="preserve">get rope</command>
+        <result xml:space="preserve">Taken.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3518"></child>
+        </children>
+    </item>
+    <item nodeId="node-3518">
+        <command xml:space="preserve">i</command>
+        <result xml:space="preserve">You are carrying:
+  Rope
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-3541">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+City Entrance
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3543"></child>
+        </children>
+    </item>
+    <item nodeId="node-3543">
+        <command xml:space="preserve">x banner</command>
+        <result xml:space="preserve">WELCOME TO
+EL TELLAGA TYNE
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-3529">
+        <command xml:space="preserve">i</command>
+        <result xml:space="preserve">You are carrying:
+  key
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3530"></child>
+        </children>
+    </item>
+    <item nodeId="node-3530">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+Badlands
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3531"></child>
+        </children>
+    </item>
+    <item nodeId="node-3531">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+Cave Wall
+You can see trapdoor here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3532"></child>
+        </children>
+    </item>
+    <item nodeId="node-3532">
+        <command xml:space="preserve">down</command>
+        <result xml:space="preserve">(first opening trapdoor)
+It seems to be locked.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3533"></child>
+        </children>
+    </item>
+    <item nodeId="node-3533">
+        <command xml:space="preserve">unlock trapdoor</command>
+        <result xml:space="preserve">(with key)
+You unlock trapdoor.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3534"></child>
+        </children>
+    </item>
+    <item nodeId="node-3534">
+        <command xml:space="preserve">down</command>
+        <result xml:space="preserve">(first opening trapdoor)
+
+Generator
+You can see trapdoor here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3535"></child>
+        </children>
+    </item>
+    <item nodeId="node-3535">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">You can't go that way.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3536"></child>
+        </children>
+    </item>
+    <item nodeId="node-3536">
+        <command xml:space="preserve">down</command>
+        <result xml:space="preserve">
+The Core
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3537"></child>
+        </children>
+    </item>
+    <item nodeId="node-3537">
+        <command xml:space="preserve">up</command>
+        <result xml:space="preserve">
+Generator
+You can see trapdoor here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3538"></child>
+        </children>
+    </item>
+    <item nodeId="node-3538">
+        <command xml:space="preserve">up</command>
+        <result xml:space="preserve">
+Cave Wall
+You can see trapdoor here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3539"></child>
+        </children>
+    </item>
+    <item nodeId="node-3539">
+        <command xml:space="preserve">close trapdoor</command>
+        <result xml:space="preserve">You close trapdoor.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3540"></child>
+        </children>
+    </item>
+    <item nodeId="node-3540">
+        <command xml:space="preserve">lock trapdoor</command>
+        <result xml:space="preserve">(with key)
+You lock trapdoor.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
