@@ -9,7 +9,7 @@
 
 LOMIRA
 An Interactive Fiction by kroberts21
-Release 1 / Serial number 190401 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD
+Release 1 / Serial number 190402 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD
 
 HOME
 You can see Backpack (closed) here.
@@ -17,6 +17,7 @@ You can see Backpack (closed) here.
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
         <children><child nodeId="node-3510"></child>
+            <child nodeId="node-4294"></child>
             <child nodeId="node-3529"></child>
             <child nodeId="node-3541"></child>
             <child nodeId="node-3515"></child>
@@ -320,14 +321,211 @@ The Core
     </item>
     <item nodeId="node-3515">
         <command xml:space="preserve">open backpack</command>
-        <result xml:space="preserve">You open Backpack, revealing Metal Bar, Knife and Canvas Sheet.
+        <result xml:space="preserve">You open Backpack, revealing Metal Bar, Knife, Canvas Sheet, space suit, helmet and oxygen tank.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
         <children><child nodeId="node-4261"></child>
             <child nodeId="node-3517"></child>
             <child nodeId="node-3522"></child>
+            <child nodeId="node-4278"></child>
         </children>
+    </item>
+    <item nodeId="node-4278">
+        <command xml:space="preserve">take space suit</command>
+        <result xml:space="preserve">Taken.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4279"></child>
+        </children>
+    </item>
+    <item nodeId="node-4279">
+        <command xml:space="preserve">take helmet</command>
+        <result xml:space="preserve">Taken.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4280"></child>
+        </children>
+    </item>
+    <item nodeId="node-4280">
+        <command xml:space="preserve">take oxygen tank</command>
+        <result xml:space="preserve">Taken.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4281"></child>
+            <child nodeId="node-4299"></child>
+        </children>
+    </item>
+    <item nodeId="node-4299">
+        <command xml:space="preserve">put on space suit</command>
+        <result xml:space="preserve">You put on space suit.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4313"></child>
+            <child nodeId="node-4300"></child>
+            <child nodeId="node-4322"></child>
+        </children>
+    </item>
+    <item nodeId="node-4322">
+        <command xml:space="preserve">put on helmet</command>
+        <result xml:space="preserve">You put on helmet.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4323"></child>
+        </children>
+    </item>
+    <item nodeId="node-4323">
+        <command xml:space="preserve">put on oxygen tank</command>
+        <result xml:space="preserve">You put on oxygen tank.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4333"></child>
+            <child nodeId="node-4324"></child>
+        </children>
+    </item>
+    <item nodeId="node-4324">
+        <command xml:space="preserve">connect helmet to oxygen tank</command>
+        <result xml:space="preserve">(first taking it off)
+You put helmet into oxygen tank.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4325"></child>
+        </children>
+    </item>
+    <item nodeId="node-4325">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+Badlands
+
+
+    *** You can't breathe ***
+
+
+
+Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
+&gt; </result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-4333">
+        <command xml:space="preserve"></command>
+        <result xml:space="preserve">I beg your pardon?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4334"></child>
+        </children>
+    </item>
+    <item nodeId="node-4334">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+Badlands
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-4300">
+        <command xml:space="preserve">connect helmet with oxygen tank</command>
+        <result xml:space="preserve">I didn't understand that sentence.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4301"></child>
+        </children>
+    </item>
+    <item nodeId="node-4301">
+        <command xml:space="preserve">connect helmet to oxygen tank</command>
+        <result xml:space="preserve">You put helmet into oxygen tank.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4302"></child>
+        </children>
+    </item>
+    <item nodeId="node-4302">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+Badlands
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-4313">
+        <command xml:space="preserve">connect helmet to oxygen tank</command>
+        <result xml:space="preserve">You put helmet into oxygen tank.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4314"></child>
+        </children>
+    </item>
+    <item nodeId="node-4314">
+        <command xml:space="preserve">put on helmet</command>
+        <result xml:space="preserve">(first taking helmet)
+You put on helmet.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4315"></child>
+        </children>
+    </item>
+    <item nodeId="node-4315">
+        <command xml:space="preserve">put on oxygen tank</command>
+        <result xml:space="preserve">You put on oxygen tank.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4316"></child>
+        </children>
+    </item>
+    <item nodeId="node-4316">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+Badlands
+
+
+    *** You can't breathe ***
+
+
+
+Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
+&gt; </result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-4281">
+        <command xml:space="preserve">connect helmet to oxygen tank</command>
+        <result xml:space="preserve">You put helmet into oxygen tank.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4292"></child>
+        </children>
+    </item>
+    <item nodeId="node-4292">
+        <command xml:space="preserve">put on space suit</command>
+        <result xml:space="preserve">You can't wear that!
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4293"></child>
+        </children>
+    </item>
+    <item nodeId="node-4293">
+        <command xml:space="preserve">i</command>
+        <result xml:space="preserve">You are carrying:
+  oxygen tank
+    helmet
+  space suit
+  key
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
     </item>
     <item nodeId="node-3522">
         <command xml:space="preserve">n</command>
@@ -787,6 +985,13 @@ You can see trapdoor here.
         <command xml:space="preserve">lock trapdoor</command>
         <result xml:space="preserve">(with key)
 You lock trapdoor.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-4294">
+        <command xml:space="preserve">get naked</command>
+        <result xml:space="preserve">You can't see any such thing.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
