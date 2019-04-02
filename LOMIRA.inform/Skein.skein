@@ -9,7 +9,7 @@
 
 LOMIRA
 An Interactive Fiction by kroberts21
-Release 1 / Serial number 190314 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD
+Release 1 / Serial number 190401 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD
 
 HOME
 You can see Backpack (closed) here.
@@ -26,12 +26,31 @@ You can see Backpack (closed) here.
     </item>
     <item nodeId="node-3478">
         <command xml:space="preserve">w</command>
-        <result xml:space="preserve">You can't go that way.
+        <result xml:space="preserve">
+Well
+You can see Bucket here.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
         <children><child nodeId="node-3479"></child>
+            <child nodeId="node-4264"></child>
         </children>
+    </item>
+    <item nodeId="node-4264">
+        <command xml:space="preserve">x well</command>
+        <result xml:space="preserve">You can't see any such thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4265"></child>
+        </children>
+    </item>
+    <item nodeId="node-4265">
+        <command xml:space="preserve">look in well</command>
+        <result xml:space="preserve">You can't see any such thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
     </item>
     <item nodeId="node-3479">
         <command xml:space="preserve">e</command>
@@ -221,7 +240,13 @@ SURFACE
         <result xml:space="preserve">
 Badlands
 
-&gt;</result>
+
+    *** You can't breathe ***
+
+
+
+Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
+&gt; </result>
         <commentary xml:space="preserve"></commentary>
         <children><child nodeId="node-3499"></child>
         </children>
@@ -230,10 +255,12 @@ Badlands
         <command xml:space="preserve">s</command>
         <result xml:space="preserve">
 Cave Wall
+You can see trapdoor here.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
         <children><child nodeId="node-3504"></child>
+            <child nodeId="node-4257"></child>
             <child nodeId="node-3500"></child>
         </children>
     </item>
@@ -250,6 +277,25 @@ Cave Wall
         <command xml:space="preserve">down</command>
         <result xml:space="preserve">
 Generator
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-4257">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+Badlands
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4258"></child>
+        </children>
+    </item>
+    <item nodeId="node-4258">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+HOME
+You can see Backpack (closed) here.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -274,11 +320,12 @@ The Core
     </item>
     <item nodeId="node-3515">
         <command xml:space="preserve">open backpack</command>
-        <result xml:space="preserve">You open Backpack, revealing Potato, Metal Bar, Knife and Canvas Sheet.
+        <result xml:space="preserve">You open Backpack, revealing Metal Bar, Knife and Canvas Sheet.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-3517"></child>
+        <children><child nodeId="node-4261"></child>
+            <child nodeId="node-3517"></child>
             <child nodeId="node-3522"></child>
         </children>
     </item>
@@ -289,7 +336,8 @@ City Entrance
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-3523"></child>
+        <children><child nodeId="node-3550"></child>
+            <child nodeId="node-3523"></child>
         </children>
     </item>
     <item nodeId="node-3523">
@@ -352,6 +400,48 @@ You can see Flint here.
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
+    <item nodeId="node-3550">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+HOME
+You can see Backpack (in which are Potato, Metal Bar, Knife and Canvas Sheet) here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3551"></child>
+        </children>
+    </item>
+    <item nodeId="node-3551">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+Well
+You can see Bucket here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3552"></child>
+        </children>
+    </item>
+    <item nodeId="node-3552">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+HOME
+You can see Backpack (in which are Potato, Metal Bar, Knife and Canvas Sheet) here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3553"></child>
+        </children>
+    </item>
+    <item nodeId="node-3553">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+Shop
+You can see Flint here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
     <item nodeId="node-3517">
         <command xml:space="preserve">get rope</command>
         <result xml:space="preserve">Taken.
@@ -369,6 +459,22 @@ You can see Flint here.
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
+    <item nodeId="node-4261">
+        <command xml:space="preserve">close backpack</command>
+        <result xml:space="preserve">You close Backpack.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4262"></child>
+        </children>
+    </item>
+    <item nodeId="node-4262">
+        <command xml:space="preserve">open backpack</command>
+        <result xml:space="preserve">You open Backpack, revealing Metal Bar, Knife and Canvas Sheet.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
     <item nodeId="node-3541">
         <command xml:space="preserve">n</command>
         <result xml:space="preserve">
@@ -376,13 +482,190 @@ City Entrance
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-3543"></child>
+        <children><child nodeId="node-3555"></child>
+            <child nodeId="node-3543"></child>
         </children>
     </item>
     <item nodeId="node-3543">
         <command xml:space="preserve">x banner</command>
         <result xml:space="preserve">WELCOME TO
 EL TELLAGA TYNE
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-3555">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+HOME
+You can see Backpack (closed) here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3556"></child>
+        </children>
+    </item>
+    <item nodeId="node-3556">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+Badlands
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3557"></child>
+        </children>
+    </item>
+    <item nodeId="node-3557">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+Cave Wall
+You can see trapdoor here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3558"></child>
+        </children>
+    </item>
+    <item nodeId="node-3558">
+        <command xml:space="preserve">unlock trapdoor</command>
+        <result xml:space="preserve">(with key)
+You unlock trapdoor.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3559"></child>
+        </children>
+    </item>
+    <item nodeId="node-3559">
+        <command xml:space="preserve">donw</command>
+        <result xml:space="preserve">That's not a verb I recognise.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3560"></child>
+        </children>
+    </item>
+    <item nodeId="node-3560">
+        <command xml:space="preserve">down</command>
+        <result xml:space="preserve">(first opening trapdoor)
+
+Generator
+You can see trapdoor here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3561"></child>
+        </children>
+    </item>
+    <item nodeId="node-3561">
+        <command xml:space="preserve">down</command>
+        <result xml:space="preserve">
+The Core
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3562"></child>
+        </children>
+    </item>
+    <item nodeId="node-3562">
+        <command xml:space="preserve">up</command>
+        <result xml:space="preserve">
+Generator
+You can see trapdoor here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3563"></child>
+        </children>
+    </item>
+    <item nodeId="node-3563">
+        <command xml:space="preserve">up</command>
+        <result xml:space="preserve">
+Cave Wall
+You can see trapdoor here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3564"></child>
+        </children>
+    </item>
+    <item nodeId="node-3564">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+Badlands
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3565"></child>
+        </children>
+    </item>
+    <item nodeId="node-3565">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+HOME
+You can see Backpack (closed) here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3566"></child>
+        </children>
+    </item>
+    <item nodeId="node-3566">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+Well
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3567"></child>
+        </children>
+    </item>
+    <item nodeId="node-3567">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+HOME
+You can see Backpack (closed) here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3568"></child>
+        </children>
+    </item>
+    <item nodeId="node-3568">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+Shop
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3569"></child>
+        </children>
+    </item>
+    <item nodeId="node-3569">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+HOME
+You can see Backpack (closed) here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3570"></child>
+        </children>
+    </item>
+    <item nodeId="node-3570">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+City Entrance
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3571"></child>
+        </children>
+    </item>
+    <item nodeId="node-3571">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+SURFACE
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
