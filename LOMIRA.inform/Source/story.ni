@@ -12,7 +12,6 @@ Rope is in Backpack.
 
 space suit is in Backpack. space suit is wearable.
 helmet is a thing in Backpack. helmet is wearable. It is an open container.
-[oxygen tank is in Backpack. oxygen tank is wearable. It is an open container.]
 
 Understand "connect [thing] to [thing]" and "tie [thing] to [thing]" as combining it with.
 Combining it with is an action applying to two things.
@@ -25,17 +24,21 @@ Banner is an undescribed thing in City Entrance. The description is "WELCOME TO[
 
 [getting oxygen test 1]
 Molecular Splitter is a container in City Entrance. It is open.
-coin is a thing. player is carrying coin.
+a coin is a thing in City Entrance.
 oxygen tank is an undescribed thing in City Entrance. It is wearable.
+Understand "put [thing] in [thing]" as putting it into.
+Putting it into is an action applying to two things.
 
-An every turn rule:
-	If coin is in Molecular Splitter:
+After putting:
+	If the player's command matches "put coin in splitter" or the player's command matches "put coin in molecular splitter":
 		move oxygen tank to player;
-		say "breathe yes haha";
-		continue the action.
+		say "breathe yes haha[line break]";
+		continue the action;
+	Otherwise:
+		say "That isn't a valid piece of currency. Try putting in the coin.".
 
 Well is a room. Well is southwest of City Entrance and west of HOME.
-Bucket is a thing in Well.
+a bucket is a thing in Well.
 xwell is an undescribed thing in Well. It is fixed in place. The description is "helmet".
 Understand "well" as xwell.
 Understand "look in [thing]" as examining.
@@ -54,6 +57,8 @@ Carry out combining it with:
 	remove the noun from play;
 	remove the second noun from play;
 	move the Contraption to the player.]
+
+
 
 Shop is a room. Shop is southeast of City Entrance and east of HOME.
 

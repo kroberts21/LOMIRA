@@ -9,14 +9,15 @@
 
 LOMIRA
 An Interactive Fiction by kroberts21
-Release 1 / Serial number 190403 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD
+Release 1 / Serial number 190405 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD
 
 HOME
 You can see Backpack (closed) here.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-3510"></child>
+        <children><child nodeId="node-4573"></child>
+            <child nodeId="node-3510"></child>
             <child nodeId="node-4294"></child>
             <child nodeId="node-3529"></child>
             <child nodeId="node-3541"></child>
@@ -31,7 +32,7 @@ You can see Backpack (closed) here.
         <command xml:space="preserve">w</command>
         <result xml:space="preserve">
 Well
-You can see Bucket and Crank here.
+You can see a bucket and Crank here.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -1076,13 +1077,17 @@ Badlands
         <command xml:space="preserve">n</command>
         <result xml:space="preserve">
 City Entrance
-You can see Molecular Splitter (empty) here.
+You can see Molecular Splitter (empty) and a coin here.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-4564"></child>
+        <children><child nodeId="node-4583"></child>
+            <child nodeId="node-4564"></child>
             <child nodeId="node-4567"></child>
+            <child nodeId="node-4571"></child>
+            <child nodeId="node-4588"></child>
             <child nodeId="node-3555"></child>
+            <child nodeId="node-4597"></child>
             <child nodeId="node-3543"></child>
         </children>
     </item>
@@ -1090,6 +1095,35 @@ You can see Molecular Splitter (empty) here.
         <command xml:space="preserve">x banner</command>
         <result xml:space="preserve">WELCOME TO
 EL TELLAGA TYNE
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-4597">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">You can't go that way.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4598"></child>
+        </children>
+    </item>
+    <item nodeId="node-4598">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+HOME
+You can see Backpack (closed) here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4599"></child>
+        </children>
+    </item>
+    <item nodeId="node-4599">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+Well
+You can see Bucket and Crank here.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -1270,17 +1304,75 @@ SURFACE
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
-    <item nodeId="node-4567">
-        <command xml:space="preserve">put coin in molecular splitter</command>
+    <item nodeId="node-4588">
+        <command xml:space="preserve">put key in molecular splitter</command>
+        <result xml:space="preserve">That isn't a valid piece of currency. Try putting in the coin.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4589"></child>
+        </children>
+    </item>
+    <item nodeId="node-4589">
+        <command xml:space="preserve">i</command>
+        <result xml:space="preserve">You are carrying:
+  key
+  coin
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4590"></child>
+        </children>
+    </item>
+    <item nodeId="node-4590">
+        <command xml:space="preserve">put coin in splitter</command>
+        <result xml:space="preserve">That isn't a valid piece of currency. Try putting in the coin.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-4571">
+        <command xml:space="preserve">put coin in splitter</command>
         <result xml:space="preserve">You put coin into Molecular Splitter.
 
 breathe yes haha
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4572"></child>
+        </children>
+    </item>
+    <item nodeId="node-4572">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+HOME
+You can see Backpack (closed) here.
+
+breathe yes haha
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-4567">
+        <command xml:space="preserve">put coin in molecular splitter</command>
+        <result xml:space="preserve">breathe yes haha
+
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
         <children><child nodeId="node-4568"></child>
         </children>
     </item>
     <item nodeId="node-4568">
+        <command xml:space="preserve">i</command>
+        <result xml:space="preserve">You are carrying:
+  oxygen tank
+  key
+  coin
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4569"></child>
+        </children>
+    </item>
+    <item nodeId="node-4569">
         <command xml:space="preserve">i</command>
         <result xml:space="preserve">You are carrying:
   oxygen tank
@@ -1304,6 +1396,47 @@ breathe yes haha
         <result xml:space="preserve">You are carrying:
   xOxygen Tank
   key
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-4583">
+        <command xml:space="preserve">i</command>
+        <result xml:space="preserve">You are carrying:
+  key
+  coin
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4584"></child>
+        </children>
+    </item>
+    <item nodeId="node-4584">
+        <command xml:space="preserve">put key in molecular splitter</command>
+        <result xml:space="preserve">breathe yes haha
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4585"></child>
+        </children>
+    </item>
+    <item nodeId="node-4585">
+        <command xml:space="preserve">i</command>
+        <result xml:space="preserve">You are carrying:
+  oxygen tank
+  key
+  coin
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4586"></child>
+        </children>
+    </item>
+    <item nodeId="node-4586">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+HOME
+You can see Backpack (closed) here.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -1480,6 +1613,53 @@ HOME
         <command xml:space="preserve">n</command>
         <result xml:space="preserve">
 City Entrance
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-4573">
+        <command xml:space="preserve"></command>
+        <result xml:space="preserve">I beg your pardon?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4574"></child>
+        </children>
+    </item>
+    <item nodeId="node-4574">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+City Entrance
+You can see Molecular Splitter (empty) here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4575"></child>
+            <child nodeId="node-4593"></child>
+        </children>
+    </item>
+    <item nodeId="node-4593">
+        <command xml:space="preserve">put coin in splitter</command>
+        <result xml:space="preserve">breathe yes haha
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4594"></child>
+        </children>
+    </item>
+    <item nodeId="node-4594">
+        <command xml:space="preserve">i</command>
+        <result xml:space="preserve">You are carrying:
+  oxygen tank
+  key
+  coin
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-4575">
+        <command xml:space="preserve">put coin in molecular splitter</command>
+        <result xml:space="preserve">You put coin into Molecular Splitter.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
