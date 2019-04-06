@@ -35,29 +35,31 @@ After putting:
 		say "breathe yes haha[line break]";
 		continue the action;
 	Otherwise:
-		say "That isn't a valid piece of currency. Try putting in the coin.".
+		say "This isn't a valid piece of currency. Try putting in the coin.".
 
 Well is a room. Well is southwest of City Entrance and west of HOME.
 a bucket is a thing in Well.
-xwell is an undescribed thing in Well. It is fixed in place. The description is "helmet".
+xwell is an undescribed container in Well. It is open. The description is "[if player has space suit]the walker was right. [end if]helmet".
 Understand "well" as xwell.
 Understand "look in [thing]" as examining.
-xBar is an undescribed thing in Well. It is fixed in place.
-Understand "bar" as xBar.
 
 Crank is a thing in Well.
 
 [fishing test 1]
 
+After combining:
+	If the player's command matches "tie bucket to rope" or the player's command matches "tie rope to bucket":
+		If rope is in backpack:
+			say "You might want to tie it to the well with something.";
+			continue the action;
+		Otherwise:
+			say "Now you can connect the bucket to the well.";
+			continue the action;
+			If the player's command matches "connect bucket to well":
+				say "You connect the bucket to the well.".
+[Test me with "put on backpack/w/tie bucket to rope/connect bucket to well".]
+Test me with "put on backpack/w/open backpack/take rope/tie bucket to rope/connect bucket to well".
 [CODE FROM TONIC]
-[The combining it with action has an object called the Contraption.
-
-Carry out combining it with: 
-	say "You tie the [the noun] to the [the second noun].";
-	remove the noun from play;
-	remove the second noun from play;
-	move the Contraption to the player.]
-
 
 
 Shop is a room. Shop is southeast of City Entrance and east of HOME.

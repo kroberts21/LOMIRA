@@ -25,6 +25,8 @@ You can see Backpack (closed) here.
             <child nodeId="node-3515"></child>
             <child nodeId="node-4335"></child>
             <child nodeId="node-3498"></child>
+            <child nodeId="node-4680"></child>
+            <child nodeId="node-4660"></child>
             <child nodeId="node-3478"></child>
         </children>
     </item>
@@ -37,8 +39,10 @@ You can see a bucket and Crank here.
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
         <children><child nodeId="node-3479"></child>
+            <child nodeId="node-4711"></child>
             <child nodeId="node-4543"></child>
             <child nodeId="node-4552"></child>
+            <child nodeId="node-4601"></child>
             <child nodeId="node-4362"></child>
             <child nodeId="node-4264"></child>
         </children>
@@ -64,6 +68,49 @@ You can see a bucket and Crank here.
         <result xml:space="preserve">Nothing obvious happens.
 
 &gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-4601">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">You can't go that way.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4602"></child>
+        </children>
+    </item>
+    <item nodeId="node-4602">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">You can't go that way.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4603"></child>
+        </children>
+    </item>
+    <item nodeId="node-4603">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+HOME
+You can see Backpack (closed) here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4604"></child>
+        </children>
+    </item>
+    <item nodeId="node-4604">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+Badlands
+
+
+    *** You can't breathe ***
+
+
+
+Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
+&gt; </result>
         <commentary xml:space="preserve"></commentary>
     </item>
     <item nodeId="node-4552">
@@ -235,14 +282,90 @@ You can see Bucket and Crank here.
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
+    <item nodeId="node-4711">
+        <command xml:space="preserve">look in well</command>
+        <result xml:space="preserve">helmet
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
     <item nodeId="node-3479">
         <command xml:space="preserve">e</command>
-        <result xml:space="preserve">You can't go that way.
+        <result xml:space="preserve">
+HOME
+You can see Backpack (closed) here.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
         <children><child nodeId="node-3480"></child>
+            <child nodeId="node-4608"></child>
         </children>
+    </item>
+    <item nodeId="node-4608">
+        <command xml:space="preserve">put on backpack</command>
+        <result xml:space="preserve">(first taking Backpack)
+You put on Backpack.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4609"></child>
+        </children>
+    </item>
+    <item nodeId="node-4609">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+Well
+You can see a bucket and Crank here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4610"></child>
+        </children>
+    </item>
+    <item nodeId="node-4610">
+        <command xml:space="preserve">open backpack</command>
+        <result xml:space="preserve">You open Backpack, revealing Metal Bar, Knife, Canvas Sheet, Rope, space suit and helmet.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4611"></child>
+        </children>
+    </item>
+    <item nodeId="node-4611">
+        <command xml:space="preserve">take rope</command>
+        <result xml:space="preserve">Taken.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4620"></child>
+            <child nodeId="node-4612"></child>
+        </children>
+    </item>
+    <item nodeId="node-4612">
+        <command xml:space="preserve">tie rope to bucket</command>
+        <result xml:space="preserve">Now you can connect the bucket to the well.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4613"></child>
+        </children>
+    </item>
+    <item nodeId="node-4613">
+        <command xml:space="preserve">connect bucket to well</command>
+        <result xml:space="preserve">&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-4620">
+        <command xml:space="preserve">tie bucket to rope</command>
+        <result xml:space="preserve">You tie the the bucket to the Rope.
+
+*** Run-time problem P15: You can't move nothing.
+
+
+Now you can connect the bucket to the well.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
     </item>
     <item nodeId="node-3480">
         <command xml:space="preserve">n</command>
@@ -418,6 +541,81 @@ SURFACE
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
+    <item nodeId="node-4660">
+        <command xml:space="preserve">test me</command>
+        <result xml:space="preserve">(Testing.)
+
+&gt;[1] put on backpack
+(first taking Backpack)
+You put on Backpack.
+
+&gt;[2] w
+
+Well
+You can see a bucket and Crank here.
+
+&gt;[3] open backpack
+You open Backpack, revealing Metal Bar, Knife, Canvas Sheet, Rope, space suit and helmet.
+
+&gt;[4] take rope
+Taken.
+
+&gt;[5] tie bucket to rope
+Now you can connect the bucket to the well.
+
+&gt;[6] connect bucket to well
+&gt;</result>
+        <commentary xml:space="preserve">[1] put on backpack
+[2] w
+[3] open backpack
+[4] take rope
+[5] tie bucket to rope
+[6] connect bucket to well
+</commentary>
+        <children></children>
+    </item>
+    <item nodeId="node-4680">
+        <command xml:space="preserve">test e</command>
+        <result xml:space="preserve">&gt;--&gt; The following tests are available:
+'test me'
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4681"></child>
+        </children>
+    </item>
+    <item nodeId="node-4681">
+        <command xml:space="preserve">test me</command>
+        <result xml:space="preserve">(Testing.)
+
+&gt;[1] put on backpack
+(first taking Backpack)
+You put on Backpack.
+
+&gt;[2] w
+
+Well
+You can see a bucket and Crank here.
+
+&gt;[3] open backpack
+You open Backpack, revealing Metal Bar, Knife, Canvas Sheet, Rope, space suit and helmet.
+
+&gt;[4] take rope
+Taken.
+
+&gt;[5] tie bucket to rope
+Now you can connect the bucket to the well.
+
+&gt;[6] connect bucket to well
+&gt;</result>
+        <commentary xml:space="preserve">[1] put on backpack
+[2] w
+[3] open backpack
+[4] take rope
+[5] tie bucket to rope
+[6] connect bucket to well
+</commentary>
+        <children></children>
+    </item>
     <item nodeId="node-3498">
         <command xml:space="preserve">s</command>
         <result xml:space="preserve">
@@ -509,7 +707,74 @@ You put on Backpack.
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
         <children><child nodeId="node-4336"></child>
+            <child nodeId="node-4643"></child>
         </children>
+    </item>
+    <item nodeId="node-4643">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+Well
+You can see a bucket and Crank here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4644"></child>
+        </children>
+    </item>
+    <item nodeId="node-4644">
+        <command xml:space="preserve">open backpack</command>
+        <result xml:space="preserve">You open Backpack, revealing Metal Bar, Knife, Canvas Sheet, Rope, space suit and helmet.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4645"></child>
+        </children>
+    </item>
+    <item nodeId="node-4645">
+        <command xml:space="preserve">take rope</command>
+        <result xml:space="preserve">Taken.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4646"></child>
+        </children>
+    </item>
+    <item nodeId="node-4646">
+        <command xml:space="preserve">tie bucket to rope</command>
+        <result xml:space="preserve">You tie the the bucket to the Rope.
+
+*** Run-time problem P15: You can't move nothing.
+
+
+Now you can connect the bucket to the well.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4647"></child>
+        </children>
+    </item>
+    <item nodeId="node-4647">
+        <command xml:space="preserve">i</command>
+        <result xml:space="preserve">You are carrying:
+  Backpack (being worn and open)
+    Metal Bar
+    Knife
+    Canvas Sheet
+    space suit
+    helmet
+  key
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4648"></child>
+        </children>
+    </item>
+    <item nodeId="node-4648">
+        <command xml:space="preserve">pick up contraption</command>
+        <result xml:space="preserve">You can't see any such thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
     </item>
     <item nodeId="node-4336">
         <command xml:space="preserve">open backpack</command>
@@ -581,7 +846,7 @@ Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
     </item>
     <item nodeId="node-3515">
         <command xml:space="preserve">open backpack</command>
-        <result xml:space="preserve">You open Backpack, revealing Metal Bar, Knife, Canvas Sheet, space suit, helmet and oxygen tank.
+        <result xml:space="preserve">You open Backpack, revealing Metal Bar, Knife, Canvas Sheet, Rope, space suit and helmet.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -598,7 +863,89 @@ Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
         <children><child nodeId="node-4279"></child>
+            <child nodeId="node-4716"></child>
         </children>
+    </item>
+    <item nodeId="node-4716">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+Well
+You can see a bucket and Crank here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4717"></child>
+        </children>
+    </item>
+    <item nodeId="node-4717">
+        <command xml:space="preserve">look in well</command>
+        <result xml:space="preserve">the walker was right. helmet
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4722"></child>
+        </children>
+    </item>
+    <item nodeId="node-4722">
+        <command xml:space="preserve">ne</command>
+        <result xml:space="preserve">
+City Entrance
+You can see Molecular Splitter (empty) and a coin here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4723"></child>
+        </children>
+    </item>
+    <item nodeId="node-4723">
+        <command xml:space="preserve">sw</command>
+        <result xml:space="preserve">
+Well
+You can see a bucket and Crank here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4724"></child>
+        </children>
+    </item>
+    <item nodeId="node-4724">
+        <command xml:space="preserve">ne</command>
+        <result xml:space="preserve">
+City Entrance
+You can see Molecular Splitter (empty) and a coin here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4725"></child>
+        </children>
+    </item>
+    <item nodeId="node-4725">
+        <command xml:space="preserve">se</command>
+        <result xml:space="preserve">
+Shop
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4726"></child>
+        </children>
+    </item>
+    <item nodeId="node-4726">
+        <command xml:space="preserve">ne</command>
+        <result xml:space="preserve">You can't go that way.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4727"></child>
+        </children>
+    </item>
+    <item nodeId="node-4727">
+        <command xml:space="preserve">nw</command>
+        <result xml:space="preserve">
+City Entrance
+You can see Molecular Splitter (empty) and a coin here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
     </item>
     <item nodeId="node-4279">
         <command xml:space="preserve">take helmet</command>
