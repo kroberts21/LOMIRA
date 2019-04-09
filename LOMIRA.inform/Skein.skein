@@ -9,7 +9,7 @@
 
 LOMIRA
 An Interactive Fiction by kroberts21
-Release 1 / Serial number 190405 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD
+Release 1 / Serial number 190409 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD
 
 HOME
 You can see Backpack (closed) here.
@@ -24,6 +24,7 @@ You can see Backpack (closed) here.
             <child nodeId="node-4343"></child>
             <child nodeId="node-3515"></child>
             <child nodeId="node-4335"></child>
+            <child nodeId="node-4742"></child>
             <child nodeId="node-3498"></child>
             <child nodeId="node-4680"></child>
             <child nodeId="node-4660"></child>
@@ -564,6 +565,8 @@ Taken.
 Now you can connect the bucket to the well.
 
 &gt;[6] connect bucket to well
+You connect the bucket to the well.
+
 &gt;</result>
         <commentary xml:space="preserve">[1] put on backpack
 [2] w
@@ -572,7 +575,22 @@ Now you can connect the bucket to the well.
 [5] tie bucket to rope
 [6] connect bucket to well
 </commentary>
-        <children></children>
+        <children><child nodeId="node-4769"></child>
+        </children>
+    </item>
+    <item nodeId="node-4769">
+        <command xml:space="preserve">i</command>
+        <result xml:space="preserve">You are carrying:
+  Backpack (being worn and open)
+    Metal Bar
+    Knife
+    Canvas Sheet
+    space suit
+    helmet
+  key
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
     </item>
     <item nodeId="node-4680">
         <command xml:space="preserve">test e</command>
@@ -699,6 +717,22 @@ The Core
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
+    <item nodeId="node-4742">
+        <command xml:space="preserve">put on bucket</command>
+        <result xml:space="preserve">You can't see any such thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4743"></child>
+        </children>
+    </item>
+    <item nodeId="node-4743">
+        <command xml:space="preserve">yeah</command>
+        <result xml:space="preserve">That's not a verb I recognise.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
     <item nodeId="node-4335">
         <command xml:space="preserve">put on backpack</command>
         <result xml:space="preserve">(first taking Backpack)
@@ -718,7 +752,9 @@ You can see a bucket and Crank here.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-4644"></child>
+        <children><child nodeId="node-4753"></child>
+            <child nodeId="node-4737"></child>
+            <child nodeId="node-4644"></child>
         </children>
     </item>
     <item nodeId="node-4644">
@@ -737,7 +773,41 @@ You can see a bucket and Crank here.
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
         <children><child nodeId="node-4646"></child>
+            <child nodeId="node-4748"></child>
         </children>
+    </item>
+    <item nodeId="node-4748">
+        <command xml:space="preserve">tie rope to bucket</command>
+        <result xml:space="preserve">Now you can connect the bucket to the well.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4749"></child>
+        </children>
+    </item>
+    <item nodeId="node-4749">
+        <command xml:space="preserve">connect bucket to well</command>
+        <result xml:space="preserve">You connect the bucket to the well.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4750"></child>
+        </children>
+    </item>
+    <item nodeId="node-4750">
+        <command xml:space="preserve">i</command>
+        <result xml:space="preserve">You are carrying:
+  Rope
+  Backpack (being worn and open)
+    Metal Bar
+    Knife
+    Canvas Sheet
+    space suit
+    helmet
+  key
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
     </item>
     <item nodeId="node-4646">
         <command xml:space="preserve">tie bucket to rope</command>
@@ -772,6 +842,64 @@ Now you can connect the bucket to the well.
     <item nodeId="node-4648">
         <command xml:space="preserve">pick up contraption</command>
         <result xml:space="preserve">You can't see any such thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-4737">
+        <command xml:space="preserve">open backpac</command>
+        <result xml:space="preserve">You can't see any such thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4738"></child>
+        </children>
+    </item>
+    <item nodeId="node-4738">
+        <command xml:space="preserve">open backpack</command>
+        <result xml:space="preserve">You open Backpack, revealing Metal Bar, Knife, Canvas Sheet, Rope, space suit and helmet.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4739"></child>
+        </children>
+    </item>
+    <item nodeId="node-4739">
+        <command xml:space="preserve">take rope</command>
+        <result xml:space="preserve">Taken.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4740"></child>
+        </children>
+    </item>
+    <item nodeId="node-4740">
+        <command xml:space="preserve">tie rope to bucket</command>
+        <result xml:space="preserve">Now you can connect the bucket to the well.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4741"></child>
+        </children>
+    </item>
+    <item nodeId="node-4741">
+        <command xml:space="preserve">connect bucket to well</command>
+        <result xml:space="preserve">&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-4753">
+        <command xml:space="preserve">connect bucket to well</command>
+        <result xml:space="preserve">tie
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4754"></child>
+        </children>
+    </item>
+    <item nodeId="node-4754">
+        <command xml:space="preserve">i</command>
+        <result xml:space="preserve">You are carrying:
+  Backpack (being worn and closed)
+  key
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>

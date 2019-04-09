@@ -54,9 +54,13 @@ After combining:
 			continue the action;
 		Otherwise:
 			say "Now you can connect the bucket to the well.";
+			move Rope to xwell;
 			continue the action;
-			If the player's command matches "connect bucket to well":
-				say "You connect the bucket to the well.".
+	If the player's command matches "connect bucket to well":
+		If player is holding Rope or Rope is in Backpack:
+			say "tie";
+		Otherwise:
+			say "You connect the bucket to the well.".
 [Test me with "put on backpack/w/tie bucket to rope/connect bucket to well".]
 Test me with "put on backpack/w/open backpack/take rope/tie bucket to rope/connect bucket to well".
 [CODE FROM TONIC]
