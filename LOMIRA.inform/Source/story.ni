@@ -11,7 +11,7 @@ Canvas Sheet is in Backpack.
 Rope is in Backpack.
 
 space suit is in Backpack. space suit is wearable.
-helmet is a thing in Backpack. helmet is wearable. It is an open container.
+[helmet is a thing in Backpack. helmet is wearable. It is an open container.]
 
 Understand "connect [thing] to [thing]" and "tie [thing] to [thing]" as combining it with.
 Combining it with is an action applying to two things.
@@ -38,15 +38,18 @@ After putting:
 		say "This isn't a valid piece of currency. Try putting in the coin.".
 
 Well is a room. Well is southwest of City Entrance and west of HOME.
-a bucket is a thing in Well.
+a bucket is a thing in Well. it is an open container. The description is "A rusty metal bucket".
 xwell is an undescribed container in Well. It is open. The description is "[if player has space suit]the walker was right. [end if]helmet".
+helmet is a thing in xwell. helmet is wearable.
 Understand "well" as xwell.
 Understand "look in [thing]" as examining.
 
-Crank is a thing in Well.
+Lever is a thing in Well.
+Button is a thing in Well.
 
-[fishing test 1]
+[fishing test 2]
 
+[connecting the bucket to the well]
 After combining:
 	If the player's command matches "tie bucket to rope" or the player's command matches "tie rope to bucket":
 		If rope is in backpack:
@@ -61,6 +64,20 @@ After combining:
 			say "tie";
 		Otherwise:
 			say "You connect the bucket to the well.".
+
+[turning the crank to get the helmet]
+very very dark hole is a room. It is below Well.
+After pulling:
+	If the player's command matches "pull lever":
+		say "You pull the lever down, and the bucket goes into the well[line break]";
+		move helmet to very very dark hole;
+		move bucket to very very dark hole;
+After pushing:
+	If the player's command matches "push button":
+		say "helmet in bucket[line break]";
+		move bucket to Well;
+		move helmet to bucket;
+		
 [Test me with "put on backpack/w/tie bucket to rope/connect bucket to well".]
 Test me with "put on backpack/w/open backpack/take rope/tie bucket to rope/connect bucket to well".
 [CODE FROM TONIC]
