@@ -67,16 +67,17 @@ After combining:
 
 [turning the crank to get the helmet]
 very very dark hole is a room. It is below Well.
-After pulling:
-	If the player's command matches "pull lever":
-		say "You pull the lever down, and the bucket goes into the well[line break]";
-		move helmet to very very dark hole;
-		move bucket to very very dark hole;
 After pushing:
 	If the player's command matches "push button":
-		say "helmet in bucket[line break]";
-		move bucket to Well;
-		move helmet to bucket;
+		If bucket is in very very dark hole:
+			say "helmet in bucket[line break]";
+			move bucket to Well;
+			move helmet to bucket;
+		If bucket is in Well:
+			say "You push the button, and the bucket goes into the well[line break]";
+			move helmet to very very dark hole;
+			move bucket to very very dark hole;
+
 		
 [Test me with "put on backpack/w/tie bucket to rope/connect bucket to well".]
 Test me with "put on backpack/w/open backpack/take rope/tie bucket to rope/connect bucket to well".

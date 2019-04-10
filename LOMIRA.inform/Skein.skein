@@ -630,6 +630,7 @@ You connect the bucket to the well.
             <child nodeId="node-4872"></child>
             <child nodeId="node-4855"></child>
             <child nodeId="node-4888"></child>
+            <child nodeId="node-5000"></child>
             <child nodeId="node-4920"></child>
             <child nodeId="node-4794"></child>
             <child nodeId="node-4786"></child>
@@ -661,6 +662,23 @@ You connect the bucket to the well.
     <item nodeId="node-4920">
         <command xml:space="preserve">three times five</command>
         <result xml:space="preserve">That's not a verb I recognise.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-5000">
+        <command xml:space="preserve">push button</command>
+        <result xml:space="preserve">You push the button, and the bucket goes into the well
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-5001"></child>
+        </children>
+    </item>
+    <item nodeId="node-5001">
+        <command xml:space="preserve">push button</command>
+        <result xml:space="preserve">helmet in bucket
+You push the button, and the bucket goes into the well
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
