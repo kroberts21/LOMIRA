@@ -20,9 +20,15 @@ The Badlands is a room. The Badlands is south of HOME.
 Cave Wall is a room. Cave Wall is south of The Badlands.
 
 City Entrance is a room. City Entrance is north of HOME.
-Banner is an undescribed thing in City Entrance. The description is "WELCOME TO[line break]EL TELLAGA TYNE".
+A Walker is a male person in City Entrance.
+Understand "talk to [someone]" as talking to.
+Talking to is an action applying to one visible thing.
+Check talking to: say "[The noun] doesn't reply.".
 
-[getting oxygen test 1]
+Instead of talking to Walker:
+	say "Howdy!".
+
+[getting oxygen test]
 Molecular Splitter is a container in City Entrance. It is open.
 a coin is a thing in City Entrance.
 oxygen tank is an undescribed thing in City Entrance. It is wearable.
@@ -34,8 +40,11 @@ After putting:
 		move oxygen tank to player;
 		say "breathe yes haha[line break]";
 		continue the action;
+	If the player's command matches "put key in splitter" or the player's command matches "put key in molecular splitter":
+		say "This isn't a valid piece of currency. Try putting in the coin.";
 	Otherwise:
-		say "This isn't a valid piece of currency. Try putting in the coin.".
+		say "You put the [the noun] in the bucket.";
+		continue the action.
 
 Well is a room. Well is southwest of City Entrance and west of HOME.
 a bucket is a thing in Well. it is an open container. The description is "A rusty metal bucket".
@@ -44,10 +53,10 @@ helmet is a thing in xwell. helmet is wearable.
 Understand "well" as xwell.
 Understand "look in [thing]" as examining.
 
-Lever is a thing in Well.
-Button is a thing in Well.
+Handle is a thing in Well.
 
-[fishing test 2]
+
+[FISHING]
 
 [connecting the bucket to the well]
 After combining:
@@ -65,18 +74,18 @@ After combining:
 		Otherwise:
 			say "You connect the bucket to the well.".
 
-[turning the crank to get the helmet]
-very very dark hole is a room. It is below Well.
+[push/pull thingy]
+very very dark hole is a room.
 After pushing:
-	If the player's command matches "push button":
-		If bucket is in very very dark hole:
-			say "helmet in bucket[line break]";
-			move bucket to Well;
-			move helmet to bucket;
-		If bucket is in Well:
-			say "You push the button, and the bucket goes into the well[line break]";
-			move helmet to very very dark hole;
-			move bucket to very very dark hole;
+	If the player's command matches "push handle":
+		say "You push the handle, and the bucket goes into the well[line break]";
+		move helmet to very very dark hole;
+		move bucket to very very dark hole;
+After pulling:
+	If the player's command matches "pull handle":
+		say "helmet in bucket[line break]";
+		move bucket to Well;
+		move helmet to bucket;
 
 		
 [Test me with "put on backpack/w/tie bucket to rope/connect bucket to well".]
