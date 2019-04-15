@@ -9,7 +9,7 @@
 
 LOMIRA
 An Interactive Fiction by kroberts21
-Release 1 / Serial number 190411 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD
+Release 1 / Serial number 190414 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD
 
 HOME
 You can see Backpack (closed) here.
@@ -2282,7 +2282,7 @@ You can see Bucket and Crank here.
     </item>
     <item nodeId="node-5087">
         <command xml:space="preserve">talk to walker</command>
-        <result xml:space="preserve">That's not a verb I recognise.
+        <result xml:space="preserve">Howdy!
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
