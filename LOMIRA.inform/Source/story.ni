@@ -4,7 +4,7 @@
 Rule for deciding whether all includes something: it does not.
 
 Rule for printing a parser error when the latest parser error is the nothing to do error:
-	say "mm-mm. " instead
+	say "mm-mm." instead
 
 key is a thing. Player is carrying key.
 
@@ -108,9 +108,12 @@ After putting:
 		continue the action;
 	If the player's command matches "put key in splitter" or the player's command matches "put key in molecular splitter":
 		say "This isn't a valid piece of currency. Try putting in the coin.";
+	If the player's command matches "put metal bar in capacitors":
+		say "You replace the faulty bar with a new one.";
+		move metal bar to Capacitors;
 	Otherwise:
 		say "You put the [the noun] in the bucket.";
-		continue the action.
+		move the noun to bucket.
 
 Well is a room. Well is southwest of City Entrance and west of HOME.
 a bucket is a thing in Well. it is an open container. The description is "A rusty metal bucket".
@@ -182,21 +185,42 @@ xgenerator is an undescribed supporter. The description is "". Understand "gener
 Understand "turn [something] off" and "switch off" as switching off.
 Understand "turn [something] on" and "switch on" as switching on.
 Surge Protector is in Generator. It is a closed openable container.
-On/Off Switch is in Surge Protector. It is a device. It is fixed in place.
-slot is in Surge Protector. It is an open container. It is fixed in place.
-faulty bar is in slot.
+On/Off Switch is in Surge Protector. It is a device. It is fixed in place. It is switched on.
+Capacitors is in Surge Protector. It is an open container. It is fixed in place.
+faulty bar is in Capacitors.
+
+Understand "take [things inside] out of [something]" as removing it from.
+An every turn rule:
+	If player is in Generator:
+		If the player's command matches "take faulty bar out of capacitors" or the player's command matches "remove faulty bar from capacitors" or the player's command matches "take faulty bar" or the player's command matches "remove faulty bar":
+			If On/Off Switch is switched off:
+				say "You remove the faulty bar from the capacitors.";
+				move faulty bar to player;
+			If On/Off Switch is switched on:
+				say "You might not want to do that.";
+				move faulty bar to Capacitors;
+	Otherwise:
+		continue the action.
 
 After switching off:
-	If the player's command matches "turn switch off":
-		If On/Off Switch is switched off:
-			say "It's already off.".
+	If the player's command matches "turn switch off" or the player's command matches "switch off":
+		say "You switch it off.";
+		now On/Off Switch is switched off.
 After switching on:
-	If the player's command matches "turn switch on":
-		If On/Off Switch is switched on:
-			say "It's already on.".
-
+	If the player's command matches "turn switch on" or the player's command matches "switch on":
+		If metal bar is in Capacitors:
+			say "You switch it on, and the generator works like new.";
+			now On/Off Switch is switched on;
+		Otherwise:
+			say "You switch it on.";
+			now On/Off Switch is switched on.
 trapdoor is a door. it is above Generator and below Cave Wall. it is locked and lockable. key unlocks trapdoor.
 The The Core is a room. The Core is below Generator.
+
+An every turn rule:
+	If player is in The Core:
+		end the story finally saying "YOU WIN".
+
 
 Test one with "put on backpack/w/open backpack/take rope/tie rope to bucket/connect bucket to well/push handle/pull handle/take helmet/e".
 Test two with "n/talk to walker/ask him about his life/ask him about his job/ask him for spacesuit/open backpack/take potato/give walker potato".

@@ -892,7 +892,7 @@ City Entrance
 You can see a Walker, Molecular Splitter (empty) and a coin here.
 
 &gt;[2] talk to walker
-"Howdy!"
+"Hello there!"
 
 
 Ask him about:
@@ -956,6 +956,7 @@ breathe yes haha
 [2] put coin in splitter
 </commentary>
         <children><child nodeId="node-5488"></child>
+            <child nodeId="node-6294"></child>
             <child nodeId="node-5521"></child>
         </children>
     </item>
@@ -1009,13 +1010,214 @@ You can see trapdoor and Surge Protector (closed) here.
     </item>
     <item nodeId="node-5591">
         <command xml:space="preserve">open surge protector</command>
-        <result xml:space="preserve">You open Surge Protector, revealing On/Off Switch and slot.
+        <result xml:space="preserve">You open Surge Protector, revealing On/Off Switch and Capacitors.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
         <children><child nodeId="node-5659"></child>
             <child nodeId="node-5625"></child>
+            <child nodeId="node-5803"></child>
+            <child nodeId="node-6163"></child>
+            <child nodeId="node-5973"></child>
         </children>
+    </item>
+    <item nodeId="node-5973">
+        <command xml:space="preserve">x slot</command>
+        <result xml:space="preserve">You can't see any such thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-6008"></child>
+        </children>
+    </item>
+    <item nodeId="node-6008">
+        <command xml:space="preserve">x capacitors</command>
+        <result xml:space="preserve">In Capacitors is faulty bar.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-6009"></child>
+        </children>
+    </item>
+    <item nodeId="node-6009">
+        <command xml:space="preserve">take faulty bar out of capacitors</command>
+        <result xml:space="preserve">Taken.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-6010"></child>
+        </children>
+    </item>
+    <item nodeId="node-6010">
+        <command xml:space="preserve">undo</command>
+        <result xml:space="preserve">Generator
+[Previous turn undone.]
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-6011"></child>
+        </children>
+    </item>
+    <item nodeId="node-6011">
+        <command xml:space="preserve">remove faulty bar from capacitors</command>
+        <result xml:space="preserve">Taken.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-6163">
+        <command xml:space="preserve">x capacitors</command>
+        <result xml:space="preserve">In Capacitors is faulty bar.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-6164"></child>
+        </children>
+    </item>
+    <item nodeId="node-6164">
+        <command xml:space="preserve">take faulty bar</command>
+        <result xml:space="preserve">Taken.
+
+You might not want to do that.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-6200"></child>
+        </children>
+    </item>
+    <item nodeId="node-6200">
+        <command xml:space="preserve">i</command>
+        <result xml:space="preserve">You are carrying:
+  oxygen tank (being worn)
+  a coin
+  space suit (being worn)
+  helmet (being worn)
+  Backpack (being worn and open)
+    metal bar
+    knife
+  key
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-6342"></child>
+        </children>
+    </item>
+    <item nodeId="node-6342">
+        <command xml:space="preserve">turn switch off</command>
+        <result xml:space="preserve">You switch it off.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-6343"></child>
+        </children>
+    </item>
+    <item nodeId="node-6343">
+        <command xml:space="preserve">take faulty bar</command>
+        <result xml:space="preserve">Taken.
+
+You remove the faulty bar from the capacitors.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-6382"></child>
+        </children>
+    </item>
+    <item nodeId="node-6382">
+        <command xml:space="preserve">take metal bar</command>
+        <result xml:space="preserve">Taken.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-6383"></child>
+        </children>
+    </item>
+    <item nodeId="node-6383">
+        <command xml:space="preserve">put metal bar in capacitors</command>
+        <result xml:space="preserve">You replace the faulty bar with a new one.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-6464"></child>
+        </children>
+    </item>
+    <item nodeId="node-6464">
+        <command xml:space="preserve">turn switch on</command>
+        <result xml:space="preserve">You switch it on, and the generator works like new.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-6506"></child>
+        </children>
+    </item>
+    <item nodeId="node-6506">
+        <command xml:space="preserve">close surge protector</command>
+        <result xml:space="preserve">You close Surge Protector.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-5803">
+        <command xml:space="preserve">turn switch off</command>
+        <result xml:space="preserve">You switch it off.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-6084"></child>
+        </children>
+    </item>
+    <item nodeId="node-6084">
+        <command xml:space="preserve">x capacitors</command>
+        <result xml:space="preserve">In Capacitors is faulty bar.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-6085"></child>
+        </children>
+    </item>
+    <item nodeId="node-6085">
+        <command xml:space="preserve">take faulty bar</command>
+        <result xml:space="preserve">Taken.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-6086"></child>
+        </children>
+    </item>
+    <item nodeId="node-6086">
+        <command xml:space="preserve">undo</command>
+        <result xml:space="preserve">Generator
+[Previous turn undone.]
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-6087"></child>
+        </children>
+    </item>
+    <item nodeId="node-6087">
+        <command xml:space="preserve">undo</command>
+        <result xml:space="preserve">Generator
+[Previous turn undone.]
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-6088"></child>
+        </children>
+    </item>
+    <item nodeId="node-6088">
+        <command xml:space="preserve">x capacitors</command>
+        <result xml:space="preserve">In Capacitors is faulty bar.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-6089"></child>
+        </children>
+    </item>
+    <item nodeId="node-6089">
+        <command xml:space="preserve">take faulty bar</command>
+        <result xml:space="preserve">Taken.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
     </item>
     <item nodeId="node-5625">
         <command xml:space="preserve">take switch</command>
@@ -1045,6 +1247,97 @@ You can see trapdoor and Surge Protector (closed) here.
     <item nodeId="node-5695">
         <command xml:space="preserve">turn switch on</command>
         <result xml:space="preserve">It's already on.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-5768"></child>
+        </children>
+    </item>
+    <item nodeId="node-5768">
+        <command xml:space="preserve">switch off</command>
+        <result xml:space="preserve">You must supply a noun.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-5769"></child>
+        </children>
+    </item>
+    <item nodeId="node-5769">
+        <command xml:space="preserve">turn switch off</command>
+        <result xml:space="preserve">It's already off.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-6294">
+        <command xml:space="preserve">tes four</command>
+        <result xml:space="preserve">That's not a verb I recognise.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-6295"></child>
+        </children>
+    </item>
+    <item nodeId="node-6295">
+        <command xml:space="preserve">test four</command>
+        <result xml:space="preserve">(Testing.)
+
+&gt;[1] put on oxygen tank
+You put on oxygen tank.
+
+&gt;[2] put on spacesuit
+You put on space suit.
+
+&gt;[3] put on helmet
+You put on helmet.
+
+&gt;[4] s
+
+HOME
+
+&gt;[5] s
+
+Badlands
+
+&gt;[6] s
+
+Cave Wall
+You can see trapdoor here.
+
+&gt;[7] unlock trapdoor with key
+You unlock trapdoor.
+
+&gt;[8] down
+(first opening trapdoor)
+
+Generator
+You can see trapdoor and Surge Protector (closed) here.
+
+&gt;</result>
+        <commentary xml:space="preserve">[1] put on oxygen tank
+[2] put on spacesuit
+[3] put on helmet
+[4] s
+[5] s
+[6] s
+[7] unlock trapdoor with key
+[8] down
+</commentary>
+        <children><child nodeId="node-6304"></child>
+        </children>
+    </item>
+    <item nodeId="node-6304">
+        <command xml:space="preserve">open surge protector</command>
+        <result xml:space="preserve">You open Surge Protector, revealing On/Off Switch and Capacitors.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-6305"></child>
+        </children>
+    </item>
+    <item nodeId="node-6305">
+        <command xml:space="preserve">x capacitors</command>
+        <result xml:space="preserve">In Capacitors is faulty bar.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
