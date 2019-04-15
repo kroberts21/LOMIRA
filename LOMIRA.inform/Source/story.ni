@@ -1,5 +1,10 @@
 "LOMIRA" by kroberts21
 
+[Disable take all; code from TONIC]
+Rule for deciding whether all includes something: it does not.
+
+Rule for printing a parser error when the latest parser error is the nothing to do error:
+	say "mm-mm. " instead
 
 key is a thing. Player is carrying key.
 
@@ -7,17 +12,14 @@ HOME is a room.
 Backpack is a portable container in HOME. It is closed and openable. It is wearable. The description is "A simple brown canvas backpack.".
 metal bar is in Backpack.
 knife is in Backpack.
-canvas sheet is in Backpack.
 rope is in Backpack.
 potato is in Backpack. potato is edible.
-
-Understand "connect [thing] to [thing]" and "tie [thing] to [thing]" as combining it with.
-Combining it with is an action applying to two things.
 
 The Badlands is a room. The Badlands is south of HOME.
 Cave Wall is a room. Cave Wall is south of The Badlands.
 
 City Entrance is a room. City Entrance is north of HOME.
+[getting space suit]
 A Walker is a male person in City Entrance. The description is "A rather tall man, about six-foot-four, wearing a brown dress shirt, black vest, deep blue jeans, black boots. Lanky too, and his strawberry blond hair goes down to his shoulders in waves. He appears pretty feminine.".
 space suit is a thing. Walker is carrying space suit. Understand "spacesuit" as space suit. space suit is wearable.
 Understand "talk to [someone]" as talking to.
@@ -46,7 +48,7 @@ Instead of asking Walker about something:
 	If the player's command matches "ask him about his life" or the player's command matches "ask walker about his life":
 		say "'Oh! I forgot to introduce myself! How rude of me, I'm so sorry. I'm Fara. I'm about twenty...five, six? Iunno, time flies so fast sometimes. I live around the urban part of the city with my boyfriend, Elair. The sweetest thing, that man is... Ah! You were saying?'";
 	If the player's command matches "ask him about earth" or the player's command matches "ask walker about earth":
-		say "'Aiiii, that old pile of junk. Information-age people gunked it up like a few thousand Earth years ago or something like that. All the smart people got on ships and flew up here. That's how the story goes, I guess.'";
+		say "'Aiiii, that old pile of junk. Information-age peoples gunked it up like a few thousand Earth years ago or something like that. All the smart people got on ships and flew up here. That's how the story goes, I guess.'";
 	If the player's command matches "ask him about where he got his clothes" or the player's command matches "ask walker about where he got his clothes" or the player's command matches "ask him about his clothes" or the player's command matches "ask walker about his clothes":
 		say "'You like this outfit? I got all this for 60 credits at that thrift store down the road!' He cranes his neck in that general direction. 'Looks like they're closed. Oh well. Hey, you should check it out sometime!'".
 
@@ -92,7 +94,7 @@ After giving something to someone:
 		move potato to Walker;
 		move space suit to player.
 
-[getting oxygen test]
+[getting oxygen]
 Molecular Splitter is a container in City Entrance. It is open.
 a coin is a thing in City Entrance.
 oxygen tank is an undescribed thing in City Entrance. It is wearable.
@@ -122,6 +124,11 @@ Handle is a thing in Well.
 
 [FISHING]
 
+Understand "connect [thing] to [thing]" and "tie [thing] to [thing]" as combining it with.
+Combining it with is an action applying to two things.
+Understand "disconnect [thing] from [thing]" as separating it from.
+Separating it from is an action applying to two things.
+
 [connecting the bucket to the well]
 After combining:
 	If the player's command matches "tie bucket to rope" or the player's command matches "tie rope to bucket":
@@ -131,43 +138,75 @@ After combining:
 		Otherwise:
 			say "Now you can connect the bucket to the well.";
 			move Rope to xwell;
+			move bucket to xwell;
 			continue the action;
 	If the player's command matches "connect bucket to well":
 		If player is holding Rope or Rope is in Backpack:
-			say "tie";
+			say "tie[line break]";
 		Otherwise:
 			say "You connect the bucket to the well.".
+After separating:
+	If the player's command matches "disconnect bucket from well":
+		If bucket is not in xwell:
+			say "There is nothing to disconnect the bucket from.";
+		Otherwise:
+			say "You disconnect the bucket from the well.";
+			move rope to player;
+			move bucket to player.
+			
 
 [push/pull thingy]
 very very dark hole is a room.
 After pushing:
-	If the player's command matches "push handle":
-		say "You push the handle, and the bucket goes into the well[line break]";
-		move helmet to very very dark hole;
-		move bucket to very very dark hole;
+	If player is holding Rope or Rope is in Backpack:
+		say "tie[line break]";
+	Otherwise:
+		If the player's command matches "push handle":
+			say "You push the handle, and the bucket goes into the well[line break]";
+			move helmet to very very dark hole;
+			move bucket to very very dark hole;
 After pulling:
-	If the player's command matches "pull handle":
-		say "helmet in bucket[line break]";
-		move bucket to Well;
-		move helmet to bucket;
-
-		
-[Test me with "put on backpack/w/tie bucket to rope/connect bucket to well".]
-Test me with "put on backpack/w/open backpack/take rope/tie bucket to rope/connect bucket to well".
-[CODE FROM TONIC]
-
-
-Shop is a room. Shop is southeast of City Entrance and east of HOME.
-
+	If player is holding Rope or Rope is in Backpack:
+		say "tie[line break]";
+	Otherwise:
+		If the player's command matches "pull handle":
+			say "helmet in bucket[line break]";
+			move bucket to Well;
+			move helmet to bucket;
 
 SURFACE is a room. SURFACE is north of City Entrance.
 Generator is a room.
+xgenerator is an undescribed supporter. The description is "". Understand "generator" as xgenerator.
+
+[FIXING THE GENERATOR]
+Understand "turn [something] off" and "switch off" as switching off.
+Understand "turn [something] on" and "switch on" as switching on.
+Surge Protector is in Generator. It is a closed openable container.
+On/Off Switch is in Surge Protector. It is a device. It is fixed in place.
+slot is in Surge Protector. It is an open container. It is fixed in place.
+faulty bar is in slot.
+
+After switching off:
+	If the player's command matches "turn switch off":
+		If On/Off Switch is switched off:
+			say "It's already off.".
+After switching on:
+	If the player's command matches "turn switch on":
+		If On/Off Switch is switched on:
+			say "It's already on.".
+
 trapdoor is a door. it is above Generator and below Cave Wall. it is locked and lockable. key unlocks trapdoor.
 The The Core is a room. The Core is below Generator.
 
+Test one with "put on backpack/w/open backpack/take rope/tie rope to bucket/connect bucket to well/push handle/pull handle/take helmet/e".
+Test two with "n/talk to walker/ask him about his life/ask him about his job/ask him for spacesuit/open backpack/take potato/give walker potato".
+Test three with "pick up coin/put coin in splitter".
+Test four with "put on oxygen tank/put on spacesuit/put on helmet/s/s/s/unlock trapdoor with key/down".
+
+
 [death in space]
 An every turn rule:
-	If player is in The Badlands:
+	If player is in The Badlands or player is in SURFACE:
 		If helmet is in oxygen tank or oxygen tank is in helmet:
 			if player is wearing space suit and player is wearing helmet and player is wearing oxygen tank:
 				continue the action;
