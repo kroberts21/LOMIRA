@@ -9,7 +9,7 @@ metal bar is in Backpack.
 knife is in Backpack.
 canvas sheet is in Backpack.
 rope is in Backpack.
-potato is in Backpack.
+potato is in Backpack. potato is edible.
 
 Understand "connect [thing] to [thing]" and "tie [thing] to [thing]" as combining it with.
 Combining it with is an action applying to two things.
@@ -19,7 +19,7 @@ Cave Wall is a room. Cave Wall is south of The Badlands.
 
 City Entrance is a room. City Entrance is north of HOME.
 A Walker is a male person in City Entrance. The description is "A rather tall man, about six-foot-four, wearing a brown dress shirt, black vest, deep blue jeans, black boots. Lanky too, and his strawberry blond hair goes down to his shoulders in waves. He appears pretty feminine.".
-space suit is a thing. Walker is carrying space suit. Understand "spacesuit" as space suit.
+space suit is a thing. Walker is carrying space suit. Understand "spacesuit" as space suit. space suit is wearable.
 Understand "talk to [someone]" as talking to.
 Talking to is an action applying to one visible thing.
 Check talking to: say "[The noun] doesn't reply.".

@@ -1275,7 +1275,8 @@ You put on Backpack.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-4336"></child>
+        <children><child nodeId="node-5246"></child>
+            <child nodeId="node-4336"></child>
             <child nodeId="node-4643"></child>
         </children>
     </item>
@@ -1610,6 +1611,286 @@ Badlands
 
 Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
 &gt; </result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-5246">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+City Entrance
+You can see a Walker, Molecular Splitter (empty) and a coin here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-5247"></child>
+        </children>
+    </item>
+    <item nodeId="node-5247">
+        <command xml:space="preserve">talk to walker</command>
+        <result xml:space="preserve">"Hello there!"
+
+
+Ask him about:
+ - his job
+ - the city
+ - his life i guess?
+ - earth
+ - where he got his clothes
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-5248"></child>
+        </children>
+    </item>
+    <item nodeId="node-5248">
+        <command xml:space="preserve">ask him for space suit</command>
+        <result xml:space="preserve">"This might sound like an odd question, but do you happen to have an extra space suit? I'm going to try to fix the generator and find out what's been causing these electrical disturbances lately," you say.
+
+"Ah yes, I do just so happen to have one, my boyfriend quit his job as a Walker not too long ag--wait, fix the generator?"
+
+He ponders this for a second. "Oh-kay, I can tell anyone who asks that you're with us, but I'm gonna have to ask for something in return."
+
+Try offering him something in your backpack.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-5249"></child>
+        </children>
+    </item>
+    <item nodeId="node-5249">
+        <command xml:space="preserve">open backpack</command>
+        <result xml:space="preserve">You open Backpack, revealing metal bar, knife, canvas sheet, rope and potato.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-5250"></child>
+        </children>
+    </item>
+    <item nodeId="node-5250">
+        <command xml:space="preserve">take potato</command>
+        <result xml:space="preserve">Taken.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-5251"></child>
+        </children>
+    </item>
+    <item nodeId="node-5251">
+        <command xml:space="preserve">offer walker potato</command>
+        <result xml:space="preserve">"Ah! A potato! Finally, I've been starving all day! Thank you so much!"
+
+He takes the potato, and gives you a space suit.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-5259"></child>
+        </children>
+    </item>
+    <item nodeId="node-5259">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+HOME
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-5260"></child>
+        </children>
+    </item>
+    <item nodeId="node-5260">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+Well
+You can see a bucket (empty) and Handle here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-5261"></child>
+        </children>
+    </item>
+    <item nodeId="node-5261">
+        <command xml:space="preserve">i</command>
+        <result xml:space="preserve">You are carrying:
+  space suit
+  Backpack (being worn and open)
+    metal bar
+    knife
+    canvas sheet
+    rope
+  key
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-5262"></child>
+        </children>
+    </item>
+    <item nodeId="node-5262">
+        <command xml:space="preserve">take rope</command>
+        <result xml:space="preserve">Taken.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-5263"></child>
+        </children>
+    </item>
+    <item nodeId="node-5263">
+        <command xml:space="preserve">tie rope to bucket</command>
+        <result xml:space="preserve">Now you can connect the bucket to the well.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-5264"></child>
+        </children>
+    </item>
+    <item nodeId="node-5264">
+        <command xml:space="preserve">connect bucket to well</command>
+        <result xml:space="preserve">You connect the bucket to the well.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-5265"></child>
+        </children>
+    </item>
+    <item nodeId="node-5265">
+        <command xml:space="preserve">push handle</command>
+        <result xml:space="preserve">You push the handle, and the bucket goes into the well
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-5266"></child>
+        </children>
+    </item>
+    <item nodeId="node-5266">
+        <command xml:space="preserve">pull handle</command>
+        <result xml:space="preserve">helmet in bucket
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-5267"></child>
+        </children>
+    </item>
+    <item nodeId="node-5267">
+        <command xml:space="preserve">i</command>
+        <result xml:space="preserve">You are carrying:
+  space suit
+  Backpack (being worn and open)
+    metal bar
+    knife
+    canvas sheet
+  key
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-5268"></child>
+        </children>
+    </item>
+    <item nodeId="node-5268">
+        <command xml:space="preserve">take helmet</command>
+        <result xml:space="preserve">Taken.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-5269"></child>
+        </children>
+    </item>
+    <item nodeId="node-5269">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+HOME
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-5270"></child>
+        </children>
+    </item>
+    <item nodeId="node-5270">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+City Entrance
+You can see a Walker, Molecular Splitter (empty) and a coin here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-5271"></child>
+        </children>
+    </item>
+    <item nodeId="node-5271">
+        <command xml:space="preserve">take coin</command>
+        <result xml:space="preserve">Taken.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-5272"></child>
+        </children>
+    </item>
+    <item nodeId="node-5272">
+        <command xml:space="preserve">put coin in splitter</command>
+        <result xml:space="preserve">breathe yes haha
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-5294"></child>
+        </children>
+    </item>
+    <item nodeId="node-5294">
+        <command xml:space="preserve">i</command>
+        <result xml:space="preserve">You are carrying:
+  oxygen tank
+  a coin
+  helmet
+  space suit
+  Backpack (being worn and open)
+    metal bar
+    knife
+    canvas sheet
+  key
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-5295"></child>
+        </children>
+    </item>
+    <item nodeId="node-5295">
+        <command xml:space="preserve">put on helmet</command>
+        <result xml:space="preserve">You put on helmet.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-5296"></child>
+        </children>
+    </item>
+    <item nodeId="node-5296">
+        <command xml:space="preserve">put on space suit</command>
+        <result xml:space="preserve">You put on space suit.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-5297"></child>
+        </children>
+    </item>
+    <item nodeId="node-5297">
+        <command xml:space="preserve">put on oxygen tank</command>
+        <result xml:space="preserve">You put on oxygen tank.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-5298"></child>
+        </children>
+    </item>
+    <item nodeId="node-5298">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+HOME
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-5299"></child>
+        </children>
+    </item>
+    <item nodeId="node-5299">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+Badlands
+
+&gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
     <item nodeId="node-5009">
