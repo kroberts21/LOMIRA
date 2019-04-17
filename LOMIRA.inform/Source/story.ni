@@ -4,23 +4,31 @@
 Rule for deciding whether all includes something: it does not.
 
 Rule for printing a parser error when the latest parser error is the nothing to do error:
-	say "mm-mm." instead
+	say "mm-mm.[line break]" instead
+
+When play begins: say "4,000 years in the future. you're gonna have to assemble a space suit btw";
+now left hand status line is "Exits: [exit list]";
+now right hand status line is "[location]".
+To say exit list:
+	let place be location;
+	repeat with way running through directions:
+		let place be the room way from the location;
+		if place is a room, say " [way] ".
 
 key is a thing. Player is carrying key.
 
-HOME is a room.
-Backpack is a portable container in HOME. It is closed and openable. It is wearable. The description is "A simple brown canvas backpack.".
-metal bar is in Backpack.
-knife is in Backpack.
-rope is in Backpack.
-potato is in Backpack. potato is edible.
+HOME is a room. "Your home is on the outskirts of the city.".
+Backpack is a portable container in HOME. It is closed and openable. It is wearable. The description is "A brown leather backpack.".
+metal bar is in Backpack. The description is "A one-foot-long metal bar.".
+rope is in Backpack. The description is "Twenty feet of beige-colored rope.".
+potato is in Backpack. potato is edible. The description is "A raw potato, wrapped in aluminum foil."
 
-The Badlands is a room. The Badlands is south of HOME.
-Cave Wall is a room. Cave Wall is south of The Badlands.
+The The Badlands is a room. The Badlands is south of HOME. "Just outside the city is a massive cave heading down. Around three stories tall, hundreds of feet wide. even more straight ahead. The sides of the cave are lit by long strips of LED displays, each solid lime green.".
+Cave Wall is a room. Cave Wall is south of The Badlands. "The end of the cave. A trapdoor sits flush in the ground, caked by a thin layer of moondust.".
 
-City Entrance is a room. City Entrance is north of HOME.
+City Entrance is a room. City Entrance is north of HOME. "A heavy, bustling steampunk atmosphere, densely populated by humans and cyborgs. There are clotheslines which stretch from building to building and wide, rusty metal pipes that clunkily wind around the walls. Embedded in a wall on the side of a road is a molecular splitter, where one can buy an oxygen tank. Leaning on the wall a few feet away from it stands a tall, flamboyant man.".
 [getting space suit]
-A Walker is a male person in City Entrance. The description is "A rather tall man, about six-foot-four, wearing a brown dress shirt, black vest, deep blue jeans, black boots. Lanky too, and his strawberry blond hair goes down to his shoulders in waves. He appears pretty feminine.".
+A Walker is a male person in City Entrance. The description is "A rather tall man, about six-foot-four, wearing a brown dress shirt, black vest, deep blue jeans, black boots. Lanky too, and his strawberry blond hair goes down to his shoulders in waves. He appears pretty feminine.". Understand "man" as Walker.
 space suit is a thing. Walker is carrying space suit. Understand "spacesuit" as space suit. space suit is wearable.
 Understand "talk to [someone]" as talking to.
 Talking to is an action applying to one visible thing.
@@ -49,7 +57,7 @@ Instead of asking Walker about something:
 		say "'Oh! I forgot to introduce myself! How rude of me, I'm so sorry. I'm Fara. I'm about twenty...five, six? Iunno, time flies so fast sometimes. I live around the urban part of the city with my boyfriend, Elair. The sweetest thing, that man is... Ah! You were saying?'";
 	If the player's command matches "ask him about earth" or the player's command matches "ask walker about earth":
 		say "'Aiiii, that old pile of junk. Information-age peoples gunked it up like a few thousand Earth years ago or something like that. All the smart people got on ships and flew up here. That's how the story goes, I guess.'";
-	If the player's command matches "ask him about where he got his clothes" or the player's command matches "ask walker about where he got his clothes" or the player's command matches "ask him about his clothes" or the player's command matches "ask walker about his clothes":
+	If the player's command matches "ask him about where he got his clothes" or the player's command matches "ask walker about where he got his clothes" or the player's command matches "ask him about his clothes" or the player's command matches "ask walker about his clothes" or the player's command matches "ask him where he got his clothes" or the player's command matches "ask walker where he got his clothes":
 		say "'You like this outfit? I got all this for 60 credits at that thrift store down the road!' He cranes his neck in that general direction. 'Looks like they're closed. Oh well. Hey, you should check it out sometime!'".
 
 Instead of asking Walker for something:
@@ -87,7 +95,7 @@ Instead of showing something to someone:
 	try giving the noun to the second noun.
 
 After giving something to someone:
-	If the player's command matches "give walker potato" or the player's command matches "offer walker potato":
+	If the player's command matches "give walker potato" or the player's command matches "offer walker potato" or the player's command matches "give walker the potato" or the player's command matches "offer walker the potato" or the player's command matches "give him potato" or the player's command matches "offer him potato" or the player's command matches "give him the potato" or the player's command matches "offer him the potato" or the player's command matches "give potato to walker" or the player's command matches "offer potato to walker":
 		say "'Ah! A potato! Finally, I've been starving all day! Thank you so much!'
 		
 		[bold type]He takes the potato, and gives you a space suit.";
@@ -95,7 +103,7 @@ After giving something to someone:
 		move space suit to player.
 
 [getting oxygen]
-Molecular Splitter is a container in City Entrance. It is open.
+Molecular Splitter is a container in City Entrance. it is fixed in place. It is open.
 a coin is a thing in City Entrance.
 oxygen tank is an undescribed thing in City Entrance. It is wearable.
 Understand "put [thing] in [thing]" as putting it into.
@@ -119,13 +127,15 @@ After putting:
 		move the noun to bucket.
 
 Well is a room. Well is southwest of City Entrance and west of HOME.
-a bucket is a thing in Well. it is an open container. The description is "A rusty metal bucket".
+a bucket is a thing in Well. it is an open container. The description is "A rusty steel bucket, around a foot in diameter.".
 xwell is an undescribed container in Well. It is open. The description is "[if player has space suit]the walker was right. [end if]helmet".
 helmet is a thing in xwell. helmet is wearable.
 Understand "well" as xwell.
 Understand "look in [thing]" as examining.
 
-Handle is a thing in Well.
+Handle is a thing in Well. The description is "A wide vertical triangular handle, painted bright red.
+
+Push to drop the bucket in the well, pull to pull it out.".
 
 
 [FISHING]
@@ -192,6 +202,12 @@ On/Off Switch is in Surge Protector. It is a device. It is fixed in place. It is
 Capacitors is in Surge Protector. It is an open container. It is fixed in place.
 faulty bar is in Capacitors.
 
+Instead of examining Capacitors:
+	say "You move a little closer to the capacitors.
+	
+	[bold type]Replace the faulty bar.";
+	continue the action.
+
 An every turn rule:
 	If player is in Generator:
 		If the player's command matches "take faulty bar out of capacitors" or the player's command matches "remove faulty bar from capacitors" or the player's command matches "take faulty bar" or the player's command matches "remove faulty bar":
@@ -206,7 +222,9 @@ An every turn rule:
 
 After switching off:
 	If the player's command matches "turn switch off" or the player's command matches "switch off":
-		say "You switch it off.";
+		say "You switch it off.
+		
+		[bold type] Examine the capacitors.";
 		now On/Off Switch is switched off.
 After switching on:
 	If the player's command matches "turn switch on" or the player's command matches "switch on":
@@ -218,7 +236,7 @@ After switching on:
 			now On/Off Switch is switched on.
 trapdoor is a door. it is above Generator and below Cave Wall. it is locked and lockable. key unlocks trapdoor.
 
-The The Core is a room. The Core is below Generator. "A giant orange crystal".
+The The Core is a room. The Core is below Generator. "A giant translucent orange crystal. This seems to be the main source of power for the city. ".
 Crystal is a thing in The Core. Crystal is a supporter.
 piece of crystal is a thing on Crystal. Understand "crystal" as piece of crystal.
 
