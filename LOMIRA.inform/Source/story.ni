@@ -111,7 +111,10 @@ After putting:
 	If the player's command matches "put metal bar in capacitors":
 		say "You replace the faulty bar with a new one.";
 		move metal bar to Capacitors;
-	Otherwise:
+	If the player's command matches "put [something] in backpack":
+		say "You put [the noun] in your backpack.";
+		move the noun to backpack;
+	If the player's command matches "put [something] in bucket":
 		say "You put the [the noun] in the bucket.";
 		move the noun to bucket.
 
@@ -189,7 +192,6 @@ On/Off Switch is in Surge Protector. It is a device. It is fixed in place. It is
 Capacitors is in Surge Protector. It is an open container. It is fixed in place.
 faulty bar is in Capacitors.
 
-Understand "take [things inside] out of [something]" as removing it from.
 An every turn rule:
 	If player is in Generator:
 		If the player's command matches "take faulty bar out of capacitors" or the player's command matches "remove faulty bar from capacitors" or the player's command matches "take faulty bar" or the player's command matches "remove faulty bar":
@@ -215,17 +217,20 @@ After switching on:
 			say "You switch it on.";
 			now On/Off Switch is switched on.
 trapdoor is a door. it is above Generator and below Cave Wall. it is locked and lockable. key unlocks trapdoor.
-The The Core is a room. The Core is below Generator.
 
-An every turn rule:
-	If player is in The Core:
-		end the story finally saying "YOU WIN".
+The The Core is a room. The Core is below Generator. "A giant orange crystal".
+Crystal is a thing in The Core. Crystal is a supporter.
+piece of crystal is a thing on Crystal. Understand "crystal" as piece of crystal.
 
+Instead of taking piece of crystal:
+	say "Cautiously, you reach both hands towards the glowing orange piece of the crystal.";
+	move piece of crystal to player.
 
 Test one with "put on backpack/w/open backpack/take rope/tie rope to bucket/connect bucket to well/push handle/pull handle/take helmet/e".
 Test two with "n/talk to walker/ask him about his life/ask him about his job/ask him for spacesuit/open backpack/take potato/give walker potato".
 Test three with "pick up coin/put coin in splitter".
 Test four with "put on oxygen tank/put on spacesuit/put on helmet/s/s/s/unlock trapdoor with key/down".
+Test five with "open surge protector/turn switch off/x capacitors/take faulty bar out of capacitors/take metal bar/put metal bar in capacitors/turn switch on/down".
 
 
 [death in space]
@@ -238,3 +243,7 @@ An every turn rule:
 				end the story finally saying "Your body froze up and you died lol";
 		if player is not wearing space suit and player is not wearing helmet or player is not wearing oxygen tank:
 			end the story finally saying "You can't breathe";
+An every turn rule:
+	If player is in SURFACE:
+		If player is carrying piece of crystal:
+			end the story finally saying "YOU WIN".

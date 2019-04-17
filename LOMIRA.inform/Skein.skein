@@ -892,7 +892,7 @@ City Entrance
 You can see a Walker, Molecular Splitter (empty) and a coin here.
 
 &gt;[2] talk to walker
-"Hello there!"
+"Howdy!"
 
 
 Ask him about:
@@ -1006,7 +1006,250 @@ You can see trapdoor and Surge Protector (closed) here.
 [8] down
 </commentary>
         <children><child nodeId="node-5591"></child>
+            <child nodeId="node-7059"></child>
         </children>
+    </item>
+    <item nodeId="node-7059">
+        <command xml:space="preserve">test five</command>
+        <result xml:space="preserve">(Testing.)
+
+&gt;[1] open surge protector
+You open Surge Protector, revealing On/Off Switch and Capacitors.
+
+&gt;[2] turn switch off
+You switch it off.
+
+&gt;[3] x capacitors
+In Capacitors is faulty bar.
+
+&gt;[4] take faulty bar out of capacitors
+I only understood you as far as wanting to take faulty bar.
+
+&gt;[5] take metal bar
+Taken.
+
+&gt;[6] put metal bar in capacitors
+You replace the faulty bar with a new one.
+
+&gt;[7] turn switch on
+You switch it on, and the generator works like new.
+
+&gt;[8] down
+
+The Core
+A giant orange crystal
+
+You can see Crystal (on which is piece of crystal) here.
+
+&gt;</result>
+        <commentary xml:space="preserve">[1] open surge protector
+[2] turn switch off
+[3] x capacitors
+[4] take faulty bar out of capacitors
+[5] take metal bar
+[6] put metal bar in capacitors
+[7] turn switch on
+[8] down
+</commentary>
+        <children><child nodeId="node-7119"></child>
+            <child nodeId="node-7068"></child>
+            <child nodeId="node-7202"></child>
+        </children>
+    </item>
+    <item nodeId="node-7202">
+        <command xml:space="preserve">take piece of crystal</command>
+        <result xml:space="preserve">Cautiously, you reach both hands towards the glowing orange piece of the crystal.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7203"></child>
+        </children>
+    </item>
+    <item nodeId="node-7203">
+        <command xml:space="preserve">up</command>
+        <result xml:space="preserve">
+Generator
+You can see trapdoor and Surge Protector (in which are On/Off Switch and Capacitors (in which are metal bar and faulty bar)) here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7204"></child>
+        </children>
+    </item>
+    <item nodeId="node-7204">
+        <command xml:space="preserve">up</command>
+        <result xml:space="preserve">
+Cave Wall
+You can see trapdoor here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7205"></child>
+        </children>
+    </item>
+    <item nodeId="node-7205">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+Badlands
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7206"></child>
+        </children>
+    </item>
+    <item nodeId="node-7206">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+HOME
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7207"></child>
+        </children>
+    </item>
+    <item nodeId="node-7207">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+City Entrance
+You can see a Walker and Molecular Splitter (empty) here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7208"></child>
+        </children>
+    </item>
+    <item nodeId="node-7208">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+SURFACE
+
+
+    *** YOU WIN ***
+
+
+
+Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
+&gt; </result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7209"></child>
+        </children>
+    </item>
+    <item nodeId="node-7209">
+        <command xml:space="preserve">i</command>
+        <result xml:space="preserve">Please give one of the answers above.
+
+Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
+&gt; </result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-7068">
+        <command xml:space="preserve">take knife</command>
+        <result xml:space="preserve">Taken.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7069"></child>
+        </children>
+    </item>
+    <item nodeId="node-7069">
+        <command xml:space="preserve">cut crystal with knife</command>
+        <result xml:space="preserve">(Crystal with knife)
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7070"></child>
+        </children>
+    </item>
+    <item nodeId="node-7070">
+        <command xml:space="preserve">take piece of crystal</command>
+        <result xml:space="preserve">Taken.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7071"></child>
+        </children>
+    </item>
+    <item nodeId="node-7071">
+        <command xml:space="preserve">i</command>
+        <result xml:space="preserve">You are carrying:
+  piece of crystal
+  knife
+  oxygen tank (being worn)
+  a coin
+  space suit (being worn)
+  helmet (being worn)
+  Backpack (being worn and open but empty)
+  key
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7072"></child>
+        </children>
+    </item>
+    <item nodeId="node-7072">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">You can't go that way.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7073"></child>
+        </children>
+    </item>
+    <item nodeId="node-7073">
+        <command xml:space="preserve">up</command>
+        <result xml:space="preserve">
+Generator
+You can see trapdoor and Surge Protector (in which are On/Off Switch and Capacitors (in which are metal bar and faulty bar)) here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7074"></child>
+        </children>
+    </item>
+    <item nodeId="node-7074">
+        <command xml:space="preserve">up</command>
+        <result xml:space="preserve">
+Cave Wall
+You can see trapdoor here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7075"></child>
+        </children>
+    </item>
+    <item nodeId="node-7075">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+Badlands
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7076"></child>
+        </children>
+    </item>
+    <item nodeId="node-7076">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+HOME
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7077"></child>
+        </children>
+    </item>
+    <item nodeId="node-7077">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+City Entrance
+You can see a Walker and Molecular Splitter (empty) here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-7119">
+        <command xml:space="preserve">cut crystal with knife</command>
+        <result xml:space="preserve">(Crystal with knife)
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
     </item>
     <item nodeId="node-5591">
         <command xml:space="preserve">open surge protector</command>
@@ -1014,7 +1257,8 @@ You can see trapdoor and Surge Protector (closed) here.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-5659"></child>
+        <children><child nodeId="node-6540"></child>
+            <child nodeId="node-5659"></child>
             <child nodeId="node-5625"></child>
             <child nodeId="node-5803"></child>
             <child nodeId="node-6163"></child>
@@ -1171,16 +1415,20 @@ You remove the faulty bar from the capacitors.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-6085"></child>
+        <children><child nodeId="node-6662"></child>
+            <child nodeId="node-6085"></child>
         </children>
     </item>
     <item nodeId="node-6085">
         <command xml:space="preserve">take faulty bar</command>
         <result xml:space="preserve">Taken.
 
+You remove the faulty bar from the capacitors.
+
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-6086"></child>
+        <children><child nodeId="node-6626"></child>
+            <child nodeId="node-6086"></child>
         </children>
     </item>
     <item nodeId="node-6086">
@@ -1216,6 +1464,183 @@ You remove the faulty bar from the capacitors.
         <command xml:space="preserve">take faulty bar</command>
         <result xml:space="preserve">Taken.
 
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-6626">
+        <command xml:space="preserve">put faulty bar in backpack</command>
+        <result xml:space="preserve">You put the faulty bar in the bucket.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-6662">
+        <command xml:space="preserve">remove faulty bar</command>
+        <result xml:space="preserve">You aren't wearing faulty bar.
+
+You remove the faulty bar from the capacitors.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-6663"></child>
+            <child nodeId="node-6861"></child>
+        </children>
+    </item>
+    <item nodeId="node-6861">
+        <command xml:space="preserve">take metal bar</command>
+        <result xml:space="preserve">Taken.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-6862"></child>
+        </children>
+    </item>
+    <item nodeId="node-6862">
+        <command xml:space="preserve">put metal bar in capacitors</command>
+        <result xml:space="preserve">You replace the faulty bar with a new one.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-6863"></child>
+        </children>
+    </item>
+    <item nodeId="node-6863">
+        <command xml:space="preserve">turn switch on</command>
+        <result xml:space="preserve">You switch it on, and the generator works like new.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-6864"></child>
+        </children>
+    </item>
+    <item nodeId="node-6864">
+        <command xml:space="preserve">down</command>
+        <result xml:space="preserve">
+The Core
+You can see Crystal here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-6865"></child>
+        </children>
+    </item>
+    <item nodeId="node-6865">
+        <command xml:space="preserve">take knife</command>
+        <result xml:space="preserve">Taken.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-6866"></child>
+        </children>
+    </item>
+    <item nodeId="node-6866">
+        <command xml:space="preserve">cut crystal with knife</command>
+        <result xml:space="preserve">(Crystal with knife)
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-6993"></child>
+        </children>
+    </item>
+    <item nodeId="node-6993">
+        <command xml:space="preserve">cut piece of crystal with knife</command>
+        <result xml:space="preserve">&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-6994"></child>
+        </children>
+    </item>
+    <item nodeId="node-6994">
+        <command xml:space="preserve">i</command>
+        <result xml:space="preserve">You are carrying:
+  knife
+  faulty bar
+  oxygen tank (being worn)
+  a coin
+  space suit (being worn)
+  helmet (being worn)
+  Backpack (being worn and open but empty)
+  key
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-6663">
+        <command xml:space="preserve">put faulty bar in backpack</command>
+        <result xml:space="preserve">You put faulty bar in your backpack.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-6664"></child>
+        </children>
+    </item>
+    <item nodeId="node-6664">
+        <command xml:space="preserve">i</command>
+        <result xml:space="preserve">You are carrying:
+  oxygen tank (being worn)
+  a coin
+  space suit (being worn)
+  helmet (being worn)
+  Backpack (being worn and open)
+    faulty bar
+    metal bar
+    knife
+  key
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-6665"></child>
+        </children>
+    </item>
+    <item nodeId="node-6665">
+        <command xml:space="preserve">take metal bar</command>
+        <result xml:space="preserve">Taken.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-6666"></child>
+        </children>
+    </item>
+    <item nodeId="node-6666">
+        <command xml:space="preserve">put metal bar in capacitors</command>
+        <result xml:space="preserve">You replace the faulty bar with a new one.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-6667"></child>
+        </children>
+    </item>
+    <item nodeId="node-6667">
+        <command xml:space="preserve">turn switch on</command>
+        <result xml:space="preserve">You switch it on, and the generator works like new.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-6668"></child>
+        </children>
+    </item>
+    <item nodeId="node-6668">
+        <command xml:space="preserve">down</command>
+        <result xml:space="preserve">
+The Core
+You can see Crystal here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-6753"></child>
+        </children>
+    </item>
+    <item nodeId="node-6753">
+        <command xml:space="preserve">cut crystal</command>
+        <result xml:space="preserve">(Crystal)
+Cutting it up would achieve little.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-6754"></child>
+        </children>
+    </item>
+    <item nodeId="node-6754">
+        <command xml:space="preserve">cut crystal with knife</command>
+        <result xml:space="preserve">(Crystal with knife)
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
@@ -1265,6 +1690,96 @@ You remove the faulty bar from the capacitors.
     <item nodeId="node-5769">
         <command xml:space="preserve">turn switch off</command>
         <result xml:space="preserve">It's already off.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-6540">
+        <command xml:space="preserve">close backpack</command>
+        <result xml:space="preserve">You close Backpack.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-6541"></child>
+        </children>
+    </item>
+    <item nodeId="node-6541">
+        <command xml:space="preserve">turn switch off</command>
+        <result xml:space="preserve">You switch it off.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-6542"></child>
+        </children>
+    </item>
+    <item nodeId="node-6542">
+        <command xml:space="preserve">x capacitors</command>
+        <result xml:space="preserve">In Capacitors is faulty bar.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-6543"></child>
+        </children>
+    </item>
+    <item nodeId="node-6543">
+        <command xml:space="preserve">take faulty bar</command>
+        <result xml:space="preserve">Taken.
+
+You remove the faulty bar from the capacitors.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-6544"></child>
+        </children>
+    </item>
+    <item nodeId="node-6544">
+        <command xml:space="preserve">open backpack</command>
+        <result xml:space="preserve">You open Backpack, revealing metal bar and knife.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-6545"></child>
+        </children>
+    </item>
+    <item nodeId="node-6545">
+        <command xml:space="preserve">take metal bar</command>
+        <result xml:space="preserve">Taken.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-6546"></child>
+        </children>
+    </item>
+    <item nodeId="node-6546">
+        <command xml:space="preserve">put metal bar in capacitors</command>
+        <result xml:space="preserve">You replace the faulty bar with a new one.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-6547"></child>
+        </children>
+    </item>
+    <item nodeId="node-6547">
+        <command xml:space="preserve">i</command>
+        <result xml:space="preserve">You are carrying:
+  faulty bar
+  oxygen tank (being worn)
+  a coin
+  space suit (being worn)
+  helmet (being worn)
+  Backpack (being worn and open)
+    knife
+  key
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-6589"></child>
+        </children>
+    </item>
+    <item nodeId="node-6589">
+        <command xml:space="preserve">down</command>
+        <result xml:space="preserve">
+The Core
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
