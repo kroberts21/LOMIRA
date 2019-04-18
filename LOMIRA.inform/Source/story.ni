@@ -234,10 +234,10 @@ After switching on:
 		Otherwise:
 			say "You switch it on.";
 			now On/Off Switch is switched on.
-trapdoor is a door. it is above Generator and below Cave Wall. it is locked and lockable. key unlocks trapdoor.
+trapdoor is a door. it is above Generator and below Cave Wall. it is locked and lockable. key unlocks trapdoor. Understand "trap door" as trapdoor.
 
 The The Core is a room. The Core is below Generator. "A giant translucent orange crystal. This seems to be the main source of power for the city. ".
-Crystal is a thing in The Core. Crystal is a supporter.
+Giant Crystal is a thing in The Core. Crystal is a supporter.
 piece of crystal is a thing on Crystal. Understand "crystal" as piece of crystal.
 
 Instead of taking piece of crystal:

@@ -7,7 +7,7 @@
         <result xml:space="preserve">
 
 
-4,000 years in the future. 
+4,000 years in the future. you're gonna have to assemble a space suit btw
 LOMIRA
 An Interactive Fiction by kroberts21
 Release 1 / Serial number 190417 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD
@@ -37,6 +37,7 @@ You can see Backpack (closed) here.
             <child nodeId="node-4660"></child>
             <child nodeId="node-5465"></child>
             <child nodeId="node-3478"></child>
+            <child nodeId="node-7379"></child>
             <child nodeId="node-4825"></child>
         </children>
     </item>
@@ -45,6 +46,195 @@ You can see Backpack (closed) here.
         <result xml:space="preserve">As good-looking as ever.
 
 &gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-7379">
+        <command xml:space="preserve">west</command>
+        <result xml:space="preserve">
+Well
+You can see a bucket (empty) and Handle here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7380"></child>
+        </children>
+    </item>
+    <item nodeId="node-7380">
+        <command xml:space="preserve">bucket</command>
+        <result xml:space="preserve">That's not a verb I recognise.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7381"></child>
+        </children>
+    </item>
+    <item nodeId="node-7381">
+        <command xml:space="preserve">x handle</command>
+        <result xml:space="preserve">A wide vertical triangular handle, painted bright red.
+
+Push to drop the bucket in the well, pull to pull it out.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7382"></child>
+        </children>
+    </item>
+    <item nodeId="node-7382">
+        <command xml:space="preserve">push</command>
+        <result xml:space="preserve">(key)
+tie
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7383"></child>
+        </children>
+    </item>
+    <item nodeId="node-7383">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+HOME
+Your home is on the outskirts of the city.
+
+You can see Backpack (closed) here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7384"></child>
+        </children>
+    </item>
+    <item nodeId="node-7384">
+        <command xml:space="preserve">open backpack</command>
+        <result xml:space="preserve">You open Backpack, revealing metal bar, rope and potato.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7385"></child>
+        </children>
+    </item>
+    <item nodeId="node-7385">
+        <command xml:space="preserve">rope</command>
+        <result xml:space="preserve">That's not a verb I recognise.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7386"></child>
+        </children>
+    </item>
+    <item nodeId="node-7386">
+        <command xml:space="preserve">metal bar</command>
+        <result xml:space="preserve">That's not a verb I recognise.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7387"></child>
+        </children>
+    </item>
+    <item nodeId="node-7387">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+City Entrance
+A heavy, bustling steampunk atmosphere, densely populated by humans and cyborgs. There are clotheslines which stretch from building to building and wide, rusty metal pipes that clunkily wind around the walls. Embedded in a wall on the side of a road is a molecular splitter, where one can buy an oxygen tank. Leaning on the wall a few feet away from it stands a tall, flamboyant man.
+
+You can see a Walker, Molecular Splitter (empty) and a coin here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7388"></child>
+        </children>
+    </item>
+    <item nodeId="node-7388">
+        <command xml:space="preserve">talk to walker</command>
+        <result xml:space="preserve">"Howdy!"
+
+
+Ask him about:
+ - his job
+ - the city
+ - his life i guess?
+ - earth
+ - where he got his clothes
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7389"></child>
+        </children>
+    </item>
+    <item nodeId="node-7389">
+        <command xml:space="preserve"> ask about earth</command>
+        <result xml:space="preserve">You can't see any such thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7390"></child>
+        </children>
+    </item>
+    <item nodeId="node-7390">
+        <command xml:space="preserve">ask him about his life</command>
+        <result xml:space="preserve">"Oh! I forgot to introduce myself! How rude of me, I'm so sorry. I'm Fara. I'm about twenty...five, six? Iunno, time flies so fast sometimes. I live around the urban part of the city with my boyfriend, Elair. The sweetest thing, that man is... Ah! You were saying?"
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7391"></child>
+        </children>
+    </item>
+    <item nodeId="node-7391">
+        <command xml:space="preserve">ask him about his job</command>
+        <result xml:space="preserve">"Oh, Walkers like myself are just people who go outside. Y'know, collect-slash-analyze moondust samples, scout for water ice, et cetera. Nerd stuff."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7392"></child>
+        </children>
+    </item>
+    <item nodeId="node-7392">
+        <command xml:space="preserve">ask him about the city</command>
+        <result xml:space="preserve">"You must not be from around these parts, huh?" He vaguely gestures with an open hand to everything.
+
+
+"This is El Tellaga Tyne! Quite a mouthful, yes, I know. One of the older lunar cities, I think. It's been around for several hundred Earth years. And that's all I know, I'm no historian or anything."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7393"></child>
+        </children>
+    </item>
+    <item nodeId="node-7393">
+        <command xml:space="preserve">ask him where he got his clothes</command>
+        <result xml:space="preserve">I didn't understand that sentence.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7394"></child>
+        </children>
+    </item>
+    <item nodeId="node-7394">
+        <command xml:space="preserve">Ask him about where he got his clothes</command>
+        <result xml:space="preserve">"You like this outfit? I got all this for 60 credits at that thrift store down the road!" He cranes his neck in that general direction. "Looks like they're closed. Oh well. Hey, you should check it out sometime!"
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7395"></child>
+        </children>
+    </item>
+    <item nodeId="node-7395">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+SURFACE
+
+
+    *** You can't breathe ***
+
+
+
+Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
+&gt; </result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7396"></child>
+        </children>
+    </item>
+    <item nodeId="node-7396">
+        <command xml:space="preserve">QUIT</command>
+        <result xml:space="preserve"></result>
         <commentary xml:space="preserve"></commentary>
     </item>
     <item nodeId="node-3478">
@@ -3894,7 +4084,7 @@ The Core
     </item>
     <item nodeId="node-3515">
         <command xml:space="preserve">open backpack</command>
-        <result xml:space="preserve">You open Backpack, revealing metal bar, knife, rope and potato.
+        <result xml:space="preserve">You open Backpack, revealing metal bar, rope and potato.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -3902,6 +4092,7 @@ The Core
             <child nodeId="node-3517"></child>
             <child nodeId="node-3522"></child>
             <child nodeId="node-4278"></child>
+            <child nodeId="node-7398"></child>
             <child nodeId="node-7260"></child>
         </children>
     </item>
@@ -5107,6 +5298,986 @@ You can see a Walker and Molecular Splitter (empty) here.
         </children>
     </item>
     <item nodeId="node-7377">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+SURFACE
+
+
+    *** YOU WIN ***
+
+
+
+Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
+&gt; </result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-7398">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+Well
+You can see a bucket (empty) and Handle here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7399"></child>
+        </children>
+    </item>
+    <item nodeId="node-7399">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+HOME
+Your home is on the outskirts of the city.
+
+You can see Backpack (in which are metal bar, rope and potato) here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7400"></child>
+        </children>
+    </item>
+    <item nodeId="node-7400">
+        <command xml:space="preserve">pick up backpack</command>
+        <result xml:space="preserve">Taken.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7401"></child>
+        </children>
+    </item>
+    <item nodeId="node-7401">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+City Entrance
+A heavy, bustling steampunk atmosphere, densely populated by humans and cyborgs. There are clotheslines which stretch from building to building and wide, rusty metal pipes that clunkily wind around the walls. Embedded in a wall on the side of a road is a molecular splitter, where one can buy an oxygen tank. Leaning on the wall a few feet away from it stands a tall, flamboyant man.
+
+You can see a Walker, Molecular Splitter (empty) and a coin here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7402"></child>
+        </children>
+    </item>
+    <item nodeId="node-7402">
+        <command xml:space="preserve">pick up coin</command>
+        <result xml:space="preserve">Taken.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7403"></child>
+        </children>
+    </item>
+    <item nodeId="node-7403">
+        <command xml:space="preserve">walker</command>
+        <result xml:space="preserve">That's not a verb I recognise.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7404"></child>
+        </children>
+    </item>
+    <item nodeId="node-7404">
+        <command xml:space="preserve">coin</command>
+        <result xml:space="preserve">That's not a verb I recognise.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7405"></child>
+        </children>
+    </item>
+    <item nodeId="node-7405">
+        <command xml:space="preserve">talk to walker</command>
+        <result xml:space="preserve">"Hello there!"
+
+
+Ask him about:
+ - his job
+ - the city
+ - his life i guess?
+ - earth
+ - where he got his clothes
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7406"></child>
+        </children>
+    </item>
+    <item nodeId="node-7406">
+        <command xml:space="preserve">ask him about where he got his clothes</command>
+        <result xml:space="preserve">"You like this outfit? I got all this for 60 credits at that thrift store down the road!" He cranes his neck in that general direction. "Looks like they're closed. Oh well. Hey, you should check it out sometime!"
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7407"></child>
+        </children>
+    </item>
+    <item nodeId="node-7407">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+HOME
+Your home is on the outskirts of the city.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7408"></child>
+        </children>
+    </item>
+    <item nodeId="node-7408">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+Well
+You can see a bucket (empty) and Handle here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7409"></child>
+        </children>
+    </item>
+    <item nodeId="node-7409">
+        <command xml:space="preserve">open backpack</command>
+        <result xml:space="preserve">That's already open.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7410"></child>
+        </children>
+    </item>
+    <item nodeId="node-7410">
+        <command xml:space="preserve">take rope</command>
+        <result xml:space="preserve">Taken.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7411"></child>
+        </children>
+    </item>
+    <item nodeId="node-7411">
+        <command xml:space="preserve">tie to bucket</command>
+        <result xml:space="preserve">You can't see any such thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7412"></child>
+        </children>
+    </item>
+    <item nodeId="node-7412">
+        <command xml:space="preserve">tie bucket</command>
+        <result xml:space="preserve">What do you want to tie the bucket to?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7413"></child>
+        </children>
+    </item>
+    <item nodeId="node-7413">
+        <command xml:space="preserve">rope</command>
+        <result xml:space="preserve">Now you can connect the bucket to the well.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7414"></child>
+        </children>
+    </item>
+    <item nodeId="node-7414">
+        <command xml:space="preserve">connect</command>
+        <result xml:space="preserve">What do you want to connect?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7415"></child>
+        </children>
+    </item>
+    <item nodeId="node-7415">
+        <command xml:space="preserve">connect bucket to well</command>
+        <result xml:space="preserve">You connect the bucket to the well.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7416"></child>
+        </children>
+    </item>
+    <item nodeId="node-7416">
+        <command xml:space="preserve">examine handle</command>
+        <result xml:space="preserve">A wide vertical triangular handle, painted bright red.
+
+Push to drop the bucket in the well, pull to pull it out.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7417"></child>
+        </children>
+    </item>
+    <item nodeId="node-7417">
+        <command xml:space="preserve">push</command>
+        <result xml:space="preserve">What do you want to push?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7418"></child>
+        </children>
+    </item>
+    <item nodeId="node-7418">
+        <command xml:space="preserve">bucket in the well</command>
+        <result xml:space="preserve">I only understood you as far as wanting to push the bucket inside.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7419"></child>
+        </children>
+    </item>
+    <item nodeId="node-7419">
+        <command xml:space="preserve">inside well</command>
+        <result xml:space="preserve">I only understood you as far as wanting to (go) inside the bucket inside.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7420"></child>
+        </children>
+    </item>
+    <item nodeId="node-7420">
+        <command xml:space="preserve">push bucket into well</command>
+        <result xml:space="preserve">You can't see any such thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7421"></child>
+        </children>
+    </item>
+    <item nodeId="node-7421">
+        <command xml:space="preserve">push handle</command>
+        <result xml:space="preserve">You push the handle, and the bucket goes into the well
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7422"></child>
+        </children>
+    </item>
+    <item nodeId="node-7422">
+        <command xml:space="preserve">pull handle</command>
+        <result xml:space="preserve">helmet in bucket
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7423"></child>
+        </children>
+    </item>
+    <item nodeId="node-7423">
+        <command xml:space="preserve">put helmet in backpack</command>
+        <result xml:space="preserve">You put helmet in your backpack.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7424"></child>
+        </children>
+    </item>
+    <item nodeId="node-7424">
+        <command xml:space="preserve">close backpack</command>
+        <result xml:space="preserve">You close Backpack.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7425"></child>
+        </children>
+    </item>
+    <item nodeId="node-7425">
+        <command xml:space="preserve">northeast</command>
+        <result xml:space="preserve">
+City Entrance
+A heavy, bustling steampunk atmosphere, densely populated by humans and cyborgs. There are clotheslines which stretch from building to building and wide, rusty metal pipes that clunkily wind around the walls. Embedded in a wall on the side of a road is a molecular splitter, where one can buy an oxygen tank. Leaning on the wall a few feet away from it stands a tall, flamboyant man.
+
+You can see a Walker and Molecular Splitter (empty) here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7426"></child>
+        </children>
+    </item>
+    <item nodeId="node-7426">
+        <command xml:space="preserve">open backpack</command>
+        <result xml:space="preserve">You open Backpack, revealing helmet, metal bar and potato.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7427"></child>
+        </children>
+    </item>
+    <item nodeId="node-7427">
+        <command xml:space="preserve">i</command>
+        <result xml:space="preserve">You are carrying:
+  a coin
+  Backpack (open)
+    helmet
+    metal bar
+    potato
+  key
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7428"></child>
+        </children>
+    </item>
+    <item nodeId="node-7428">
+        <command xml:space="preserve">take coin out</command>
+        <result xml:space="preserve">I only understood you as far as wanting to take the coin.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7429"></child>
+        </children>
+    </item>
+    <item nodeId="node-7429">
+        <command xml:space="preserve">coin</command>
+        <result xml:space="preserve">That's not a verb I recognise.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7430"></child>
+        </children>
+    </item>
+    <item nodeId="node-7430">
+        <command xml:space="preserve">take the coin out</command>
+        <result xml:space="preserve">I only understood you as far as wanting to take the coin.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7431"></child>
+        </children>
+    </item>
+    <item nodeId="node-7431">
+        <command xml:space="preserve">take coin out</command>
+        <result xml:space="preserve">I only understood you as far as wanting to take the coin.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7432"></child>
+        </children>
+    </item>
+    <item nodeId="node-7432">
+        <command xml:space="preserve">put coin into Molecular Splitter</command>
+        <result xml:space="preserve">You put the coin into Molecular Splitter.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7433"></child>
+        </children>
+    </item>
+    <item nodeId="node-7433">
+        <command xml:space="preserve">i</command>
+        <result xml:space="preserve">You are carrying:
+  Backpack (open)
+    helmet
+    metal bar
+    potato
+  key
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7434"></child>
+        </children>
+    </item>
+    <item nodeId="node-7434">
+        <command xml:space="preserve">take coin</command>
+        <result xml:space="preserve">Taken.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7435"></child>
+        </children>
+    </item>
+    <item nodeId="node-7435">
+        <command xml:space="preserve">put coin into splitter</command>
+        <result xml:space="preserve">You put the coin into Molecular Splitter.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7436"></child>
+        </children>
+    </item>
+    <item nodeId="node-7436">
+        <command xml:space="preserve">take coin</command>
+        <result xml:space="preserve">Taken.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7437"></child>
+        </children>
+    </item>
+    <item nodeId="node-7437">
+        <command xml:space="preserve">put coin in splitter</command>
+        <result xml:space="preserve">breathe yes haha
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7438"></child>
+        </children>
+    </item>
+    <item nodeId="node-7438">
+        <command xml:space="preserve">i</command>
+        <result xml:space="preserve">You are carrying:
+  oxygen tank
+  a coin
+  Backpack (open)
+    helmet
+    metal bar
+    potato
+  key
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7439"></child>
+        </children>
+    </item>
+    <item nodeId="node-7439">
+        <command xml:space="preserve">put oxygen tank in backpack</command>
+        <result xml:space="preserve">You put oxygen tank in your backpack.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7440"></child>
+        </children>
+    </item>
+    <item nodeId="node-7440">
+        <command xml:space="preserve">close backpack</command>
+        <result xml:space="preserve">You close Backpack.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7441"></child>
+        </children>
+    </item>
+    <item nodeId="node-7441">
+        <command xml:space="preserve">talk to walker</command>
+        <result xml:space="preserve">"Howdy!"
+
+
+Ask him about:
+ - his job
+ - the city
+ - his life i guess?
+ - earth
+ - where he got his clothes
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7442"></child>
+        </children>
+    </item>
+    <item nodeId="node-7442">
+        <command xml:space="preserve">ask him about earth</command>
+        <result xml:space="preserve">"Aiiii, that old pile of junk. Information-age peoples gunked it up like a few thousand Earth years ago or something like that. All the smart people got on ships and flew up here. That's how the story goes, I guess."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7443"></child>
+        </children>
+    </item>
+    <item nodeId="node-7443">
+        <command xml:space="preserve">ask him about space suit</command>
+        <result xml:space="preserve">&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7444"></child>
+        </children>
+    </item>
+    <item nodeId="node-7444">
+        <command xml:space="preserve"></command>
+        <result xml:space="preserve">I beg your pardon?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7445"></child>
+        </children>
+    </item>
+    <item nodeId="node-7445">
+        <command xml:space="preserve">ask him for space suit</command>
+        <result xml:space="preserve">"This might sound like an odd question, but do you happen to have an extra space suit? I'm going to try to fix the generator and find out what's been causing these electrical disturbances lately," you say.
+
+"Ah yes, I do just so happen to have one, my boyfriend quit his job as a Walker not too long ag--wait, fix the generator?"
+
+He ponders this for a second. "Oh-kay, I can tell anyone who asks that you're with us, but I'm gonna have to ask for something in return."
+
+Try offering him something in your backpack.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7446"></child>
+        </children>
+    </item>
+    <item nodeId="node-7446">
+        <command xml:space="preserve">potato</command>
+        <result xml:space="preserve">That's not a verb I recognise.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7447"></child>
+        </children>
+    </item>
+    <item nodeId="node-7447">
+        <command xml:space="preserve">give him potato</command>
+        <result xml:space="preserve">You can't see any such thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7448"></child>
+        </children>
+    </item>
+    <item nodeId="node-7448">
+        <command xml:space="preserve">open backpack</command>
+        <result xml:space="preserve">You open Backpack, revealing oxygen tank, helmet, metal bar and potato.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7449"></child>
+        </children>
+    </item>
+    <item nodeId="node-7449">
+        <command xml:space="preserve">take out potato</command>
+        <result xml:space="preserve">I only understood you as far as wanting to take outside.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7450"></child>
+        </children>
+    </item>
+    <item nodeId="node-7450">
+        <command xml:space="preserve">I summon thee ultimate potato god</command>
+        <result xml:space="preserve">I only understood you as far as wanting to take inventory.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7451"></child>
+        </children>
+    </item>
+    <item nodeId="node-7451">
+        <command xml:space="preserve">take potato</command>
+        <result xml:space="preserve">Taken.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7452"></child>
+        </children>
+    </item>
+    <item nodeId="node-7452">
+        <command xml:space="preserve">offer walker potato</command>
+        <result xml:space="preserve">"Ah! A potato! Finally, I've been starving all day! Thank you so much!"
+
+He takes the potato, and gives you a space suit.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7453"></child>
+        </children>
+    </item>
+    <item nodeId="node-7453">
+        <command xml:space="preserve">YEEEEEEEE</command>
+        <result xml:space="preserve">That's not a verb I recognise.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7454"></child>
+        </children>
+    </item>
+    <item nodeId="node-7454">
+        <command xml:space="preserve">I</command>
+        <result xml:space="preserve">You are carrying:
+  space suit
+  a coin
+  Backpack (open)
+    oxygen tank
+    helmet
+    metal bar
+  key
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7455"></child>
+        </children>
+    </item>
+    <item nodeId="node-7455">
+        <command xml:space="preserve">put on space suit</command>
+        <result xml:space="preserve">You put on space suit.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7456"></child>
+        </children>
+    </item>
+    <item nodeId="node-7456">
+        <command xml:space="preserve">put on oxygen tank</command>
+        <result xml:space="preserve">(first taking oxygen tank)
+You put on oxygen tank.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7457"></child>
+        </children>
+    </item>
+    <item nodeId="node-7457">
+        <command xml:space="preserve"></command>
+        <result xml:space="preserve">I beg your pardon?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7458"></child>
+        </children>
+    </item>
+    <item nodeId="node-7458">
+        <command xml:space="preserve">put on helmet</command>
+        <result xml:space="preserve">(first taking helmet)
+You put on helmet.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7459"></child>
+        </children>
+    </item>
+    <item nodeId="node-7459">
+        <command xml:space="preserve">YEEEEEEEEEEEEEEEEEEEEEE WE DID IT!!!!!!!!!!</command>
+        <result xml:space="preserve">That's not a verb I recognise.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7460"></child>
+        </children>
+    </item>
+    <item nodeId="node-7460">
+        <command xml:space="preserve">take oxygen tank</command>
+        <result xml:space="preserve">You already have that.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7461"></child>
+        </children>
+    </item>
+    <item nodeId="node-7461">
+        <command xml:space="preserve">put on oxygen tank</command>
+        <result xml:space="preserve">You're already wearing that!
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7462"></child>
+        </children>
+    </item>
+    <item nodeId="node-7462">
+        <command xml:space="preserve">i</command>
+        <result xml:space="preserve">You are carrying:
+  helmet (being worn)
+  oxygen tank (being worn)
+  space suit (being worn)
+  a coin
+  Backpack (open)
+    metal bar
+  key
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7463"></child>
+        </children>
+    </item>
+    <item nodeId="node-7463">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+HOME
+Your home is on the outskirts of the city.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7464"></child>
+        </children>
+    </item>
+    <item nodeId="node-7464">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+The Badlands
+Just outside the city is a massive cave heading down. Around three stories tall, hundreds of feet wide. even more straight ahead. The sides of the cave are lit by long strips of LED displays, each solid lime green.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7465"></child>
+        </children>
+    </item>
+    <item nodeId="node-7465">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+Cave Wall
+The end of the cave. A trapdoor sits flush in the ground, caked by a thin layer of moondust.
+
+You can see trapdoor here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7466"></child>
+        </children>
+    </item>
+    <item nodeId="node-7466">
+        <command xml:space="preserve">examine trap door</command>
+        <result xml:space="preserve">You can't see any such thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7467"></child>
+        </children>
+    </item>
+    <item nodeId="node-7467">
+        <command xml:space="preserve">i</command>
+        <result xml:space="preserve">You are carrying:
+  helmet (being worn)
+  oxygen tank (being worn)
+  space suit (being worn)
+  a coin
+  Backpack (open)
+    metal bar
+  key
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7468"></child>
+        </children>
+    </item>
+    <item nodeId="node-7468">
+        <command xml:space="preserve">use key with trap door</command>
+        <result xml:space="preserve">That's not a verb I recognise.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7469"></child>
+        </children>
+    </item>
+    <item nodeId="node-7469">
+        <command xml:space="preserve">take out key</command>
+        <result xml:space="preserve">I only understood you as far as wanting to take outside.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7470"></child>
+        </children>
+    </item>
+    <item nodeId="node-7470">
+        <command xml:space="preserve">open backpack</command>
+        <result xml:space="preserve">That's already open.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7471"></child>
+        </children>
+    </item>
+    <item nodeId="node-7471">
+        <command xml:space="preserve">take key</command>
+        <result xml:space="preserve">You already have that.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7472"></child>
+        </children>
+    </item>
+    <item nodeId="node-7472">
+        <command xml:space="preserve">unlock trap door</command>
+        <result xml:space="preserve">You can't see any such thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7473"></child>
+        </children>
+    </item>
+    <item nodeId="node-7473">
+        <command xml:space="preserve">unlock trapdoor</command>
+        <result xml:space="preserve">What do you want to unlock trapdoor with?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7474"></child>
+        </children>
+    </item>
+    <item nodeId="node-7474">
+        <command xml:space="preserve">key</command>
+        <result xml:space="preserve">You unlock trapdoor.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7475"></child>
+        </children>
+    </item>
+    <item nodeId="node-7475">
+        <command xml:space="preserve">d</command>
+        <result xml:space="preserve">(first opening trapdoor)
+
+Generator
+You can see trapdoor and Surge Protector (closed) here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7476"></child>
+        </children>
+    </item>
+    <item nodeId="node-7476">
+        <command xml:space="preserve">d</command>
+        <result xml:space="preserve">
+The Core
+A giant translucent orange crystal. This seems to be the main source of power for the city. 
+
+You can see Crystal (on which is piece of crystal) here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7477"></child>
+        </children>
+    </item>
+    <item nodeId="node-7477">
+        <command xml:space="preserve">crack crystal</command>
+        <result xml:space="preserve">(Crystal)
+Violence isn't the answer to this one.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7478"></child>
+        </children>
+    </item>
+    <item nodeId="node-7478">
+        <command xml:space="preserve">break crystal</command>
+        <result xml:space="preserve">(Crystal)
+Violence isn't the answer to this one.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7479"></child>
+        </children>
+    </item>
+    <item nodeId="node-7479">
+        <command xml:space="preserve">unleash the beast</command>
+        <result xml:space="preserve">That's not a verb I recognise.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7480"></child>
+        </children>
+    </item>
+    <item nodeId="node-7480">
+        <command xml:space="preserve">take crystal</command>
+        <result xml:space="preserve">(Crystal)
+That's fixed in place.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7481"></child>
+        </children>
+    </item>
+    <item nodeId="node-7481">
+        <command xml:space="preserve">take piece of crystal</command>
+        <result xml:space="preserve">Cautiously, you reach both hands towards the glowing orange piece of the crystal.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7482"></child>
+        </children>
+    </item>
+    <item nodeId="node-7482">
+        <command xml:space="preserve">i</command>
+        <result xml:space="preserve">You are carrying:
+  piece of crystal
+  helmet (being worn)
+  oxygen tank (being worn)
+  space suit (being worn)
+  a coin
+  Backpack (open)
+    metal bar
+  key
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7483"></child>
+        </children>
+    </item>
+    <item nodeId="node-7483">
+        <command xml:space="preserve">u</command>
+        <result xml:space="preserve">
+Generator
+You can see trapdoor and Surge Protector (closed) here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7484"></child>
+        </children>
+    </item>
+    <item nodeId="node-7484">
+        <command xml:space="preserve">u</command>
+        <result xml:space="preserve">
+Cave Wall
+The end of the cave. A trapdoor sits flush in the ground, caked by a thin layer of moondust.
+
+You can see trapdoor here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7485"></child>
+        </children>
+    </item>
+    <item nodeId="node-7485">
+        <command xml:space="preserve"></command>
+        <result xml:space="preserve">I beg your pardon?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7486"></child>
+        </children>
+    </item>
+    <item nodeId="node-7486">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+The Badlands
+Just outside the city is a massive cave heading down. Around three stories tall, hundreds of feet wide. even more straight ahead. The sides of the cave are lit by long strips of LED displays, each solid lime green.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7487"></child>
+        </children>
+    </item>
+    <item nodeId="node-7487">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+Cave Wall
+The end of the cave. A trapdoor sits flush in the ground, caked by a thin layer of moondust.
+
+You can see trapdoor here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7488"></child>
+        </children>
+    </item>
+    <item nodeId="node-7488">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+The Badlands
+Just outside the city is a massive cave heading down. Around three stories tall, hundreds of feet wide. even more straight ahead. The sides of the cave are lit by long strips of LED displays, each solid lime green.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7489"></child>
+        </children>
+    </item>
+    <item nodeId="node-7489">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+HOME
+Your home is on the outskirts of the city.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7490"></child>
+        </children>
+    </item>
+    <item nodeId="node-7490">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+City Entrance
+A heavy, bustling steampunk atmosphere, densely populated by humans and cyborgs. There are clotheslines which stretch from building to building and wide, rusty metal pipes that clunkily wind around the walls. Embedded in a wall on the side of a road is a molecular splitter, where one can buy an oxygen tank. Leaning on the wall a few feet away from it stands a tall, flamboyant man.
+
+You can see a Walker and Molecular Splitter (empty) here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7491"></child>
+        </children>
+    </item>
+    <item nodeId="node-7491">
         <command xml:space="preserve">n</command>
         <result xml:space="preserve">
 SURFACE
