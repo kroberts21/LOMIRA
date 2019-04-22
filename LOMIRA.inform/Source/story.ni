@@ -6,7 +6,7 @@ Rule for deciding whether all includes something: it does not.
 Rule for printing a parser error when the latest parser error is the nothing to do error:
 	say "mm-mm.[line break]" instead
 
-When play begins: say "4,000 years in the future. you're gonna have to assemble a space suit btw";
+When play begins: say "4,000 years in the future. There have been electrical disturbances of varying severities across El Tellaga Tyne for the past few months. You put your foot down and decide to do something about that.";
 now left hand status line is "Exits: [exit list]";
 now right hand status line is "[location]".
 To say exit list:
@@ -15,15 +15,15 @@ To say exit list:
 		let place be the room way from the location;
 		if place is a room, say " [way] ".
 
-key is a thing. Player is carrying key.
+key is a thing. Player is carrying key. The description is "".
 
-HOME is a room. "Your home is on the outskirts of the city.".
+HOME is a room. "Your home is on the outskirts of the city. An old apartment.".
 Backpack is a portable container in HOME. It is closed and openable. It is wearable. The description is "A brown leather backpack.".
 metal bar is in Backpack. The description is "A one-foot-long metal bar.".
 rope is in Backpack. The description is "Twenty feet of beige-colored rope.".
 potato is in Backpack. potato is edible. The description is "A raw potato, wrapped in aluminum foil."
 
-The The Badlands is a room. The Badlands is south of HOME. "Just outside the city is a massive cave heading down. Around three stories tall, hundreds of feet wide. even more straight ahead. The sides of the cave are lit by long strips of LED displays, each solid lime green.".
+The The Badlands is a room. The Badlands is south of HOME. "Just outside the city is a massive cave heading down. Around three stories tall, hundreds of feet wide. even more straight ahead. The sides of the cave are lit by long strips of LED displays, each solid neon green.".
 Cave Wall is a room. Cave Wall is south of The Badlands. "The end of the cave. A trapdoor sits flush in the ground, caked by a thin layer of moondust.".
 
 City Entrance is a room. City Entrance is north of HOME. "A heavy, bustling steampunk atmosphere, densely populated by humans and cyborgs. There are clotheslines which stretch from building to building and wide, rusty metal pipes that clunkily wind around the walls. Embedded in a wall on the side of a road is a molecular splitter, where one can buy an oxygen tank. Leaning on the wall a few feet away from it stands a tall, flamboyant man.".
@@ -126,10 +126,10 @@ After putting:
 		say "You put the [the noun] in the bucket.";
 		move the noun to bucket.
 
-Well is a room. Well is southwest of City Entrance and west of HOME.
+Well is a room. Well is southwest of City Entrance and west of HOME. "[bold type]Examine the handle to learn how to use it.".
 a bucket is a thing in Well. it is an open container. The description is "A rusty steel bucket, around a foot in diameter.".
 xwell is an undescribed container in Well. It is open. The description is "[if player has space suit]the walker was right. [end if]helmet".
-helmet is a thing in xwell. helmet is wearable.
+helmet is a thing in xwell. helmet is wearable. Understand "the helmet" as helmet. The description is "Not at all how information-age media depicted space helmets. This one looks more like a gladiator helmet, but without the thing at the top. It looks prussian blue, but it's faded quite a lot."
 Understand "well" as xwell.
 Understand "look in [thing]" as examining.
 
@@ -140,7 +140,7 @@ Push to drop the bucket in the well, pull to pull it out.".
 
 [FISHING]
 
-Understand "connect [thing] to [thing]" and "tie [thing] to [thing]" as combining it with.
+Understand "connect [thing] to [thing]" and "tie [thing] to [thing]" and "put [thing] on [thing]" as combining it with.
 Combining it with is an action applying to two things.
 Understand "disconnect [thing] from [thing]" as separating it from.
 Separating it from is an action applying to two things.
@@ -169,8 +169,6 @@ After separating:
 			say "You disconnect the bucket from the well.";
 			move rope to player;
 			move bucket to player.
-			
-
 [push/pull thingy]
 very very dark hole is a room.
 After pushing:
@@ -237,18 +235,19 @@ After switching on:
 trapdoor is a door. it is above Generator and below Cave Wall. it is locked and lockable. key unlocks trapdoor. Understand "trap door" as trapdoor.
 
 The The Core is a room. The Core is below Generator. "A giant translucent orange crystal. This seems to be the main source of power for the city. ".
-Giant Crystal is a thing in The Core. Crystal is a supporter.
+Giant Crystal is a thing in The Core. Giant Crystal is a supporter. Giant Crystal is fixed in place.
 piece of crystal is a thing on Crystal. Understand "crystal" as piece of crystal.
 
 Instead of taking piece of crystal:
 	say "Cautiously, you reach both hands towards the glowing orange piece of the crystal.";
 	move piece of crystal to player.
 
-Test one with "put on backpack/w/open backpack/take rope/tie rope to bucket/connect bucket to well/push handle/pull handle/take helmet/e".
+Test one with "put on backpack/w/open backpack/take rope/put rope on bucket/connect bucket to well/push handle/pull handle/take helmet/e".
 Test two with "n/talk to walker/ask him about his life/ask him about his job/ask him for spacesuit/open backpack/take potato/give walker potato".
 Test three with "pick up coin/put coin in splitter".
 Test four with "put on oxygen tank/put on spacesuit/put on helmet/s/s/s/unlock trapdoor with key/down".
 Test five with "open surge protector/turn switch off/x capacitors/take faulty bar out of capacitors/take metal bar/put metal bar in capacitors/turn switch on/down".
+Test six with "take piece of crystal/up/up/n/n/n/n".
 
 
 [death in space]
@@ -264,4 +263,6 @@ An every turn rule:
 An every turn rule:
 	If player is in SURFACE:
 		If player is carrying piece of crystal:
-			end the story finally saying "YOU WIN".
+			end the story finally saying "The moment you step foot outside the other end of the dome, the crystal in your hands starts to slowly levitate upwards. Stopping at around three feet in front of you, seven feet above the ground, it explodes, jettisoning orange shards out into space. When the smoke clears, you see a tiny gray humanoid figure, hovering where the crystal was. 'Thank you,' it says, and takes off toward the constellation Orion. [if metal bar is not in Capacitors]You forgot to fix the generator, but that's alright. Not your problem anymore.[end if]
+			
+			YOU WIN".

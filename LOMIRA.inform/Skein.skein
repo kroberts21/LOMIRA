@@ -7,13 +7,14 @@
         <result xml:space="preserve">
 
 
-4,000 years in the future. you're gonna have to assemble a space suit btw
+4,000 years in the future. There have been electrical disturbances of varying severities across El Tellaga Tyne for the past few months. You put your foot down and decide to do something about that.
+
 LOMIRA
 An Interactive Fiction by kroberts21
-Release 1 / Serial number 190417 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD
+Release 1 / Serial number 190422 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD
 
 HOME
-Your home is on the outskirts of the city.
+Your home is on the outskirts of the city. An old apartment.
 
 You can see Backpack (closed) here.
 
@@ -1036,22 +1037,20 @@ Well
 You can see a bucket (empty) and Handle here.
 
 &gt;[3] open backpack
-You open Backpack, revealing metal bar, knife, rope and potato.
+You open Backpack, revealing metal bar, rope and potato.
 
 &gt;[4] take rope
 Taken.
 
-&gt;[5] tie rope to bucket
-Now you can connect the bucket to the well.
-
+&gt;[5] put rope on bucket
 &gt;[6] connect bucket to well
-You connect the bucket to the well.
+tie
 
 &gt;[7] push handle
-You push the handle, and the bucket goes into the well
+tie
 
 &gt;[8] pull handle
-helmet in bucket
+tie
 
 &gt;[9] take helmet
 Taken.
@@ -1059,13 +1058,14 @@ Taken.
 &gt;[10] e
 
 HOME
+Your home is on the outskirts of the city. An old apartment 
 
 &gt;</result>
         <commentary xml:space="preserve">[1] put on backpack
 [2] w
 [3] open backpack
 [4] take rope
-[5] tie rope to bucket
+[5] put rope on bucket
 [6] connect bucket to well
 [7] push handle
 [8] pull handle
@@ -1082,6 +1082,8 @@ HOME
 &gt;[1] n
 
 City Entrance
+A heavy, bustling steampunk atmosphere, densely populated by humans and cyborgs. There are clotheslines which stretch from building to building and wide, rusty metal pipes that clunkily wind around the walls. Embedded in a wall on the side of a road is a molecular splitter, where one can buy an oxygen tank. Leaning on the wall a few feet away from it stands a tall, flamboyant man.
+
 You can see a Walker, Molecular Splitter (empty) and a coin here.
 
 &gt;[2] talk to walker
@@ -1169,14 +1171,18 @@ You put on helmet.
 &gt;[4] s
 
 HOME
+Your home is on the outskirts of the city. An old apartment 
 
 &gt;[5] s
 
-Badlands
+The Badlands
+Just outside the city is a massive cave heading down. Around three stories tall, hundreds of feet wide. even more straight ahead. The sides of the cave are lit by long strips of LED displays, each solid neon green.
 
 &gt;[6] s
 
 Cave Wall
+The end of the cave. A trapdoor sits flush in the ground, caked by a thin layer of moondust.
+
 You can see trapdoor here.
 
 &gt;[7] unlock trapdoor with key
@@ -1198,7 +1204,8 @@ You can see trapdoor and Surge Protector (closed) here.
 [7] unlock trapdoor with key
 [8] down
 </commentary>
-        <children><child nodeId="node-5591"></child>
+        <children><child nodeId="node-7678"></child>
+            <child nodeId="node-5591"></child>
             <child nodeId="node-7059"></child>
         </children>
     </item>
@@ -1212,7 +1219,13 @@ You open Surge Protector, revealing On/Off Switch and Capacitors.
 &gt;[2] turn switch off
 You switch it off.
 
+ Examine the capacitors.
+
 &gt;[3] x capacitors
+You move a little closer to the capacitors.
+
+Replace the faulty bar.
+
 In Capacitors is faulty bar.
 
 &gt;[4] take faulty bar out of capacitors
@@ -1230,9 +1243,9 @@ You switch it on, and the generator works like new.
 &gt;[8] down
 
 The Core
-A giant orange crystal
+A giant translucent orange crystal. This seems to be the main source of power for the city. 
 
-You can see Crystal (on which is piece of crystal) here.
+You can see Giant Crystal (on which is piece of crystal) here.
 
 &gt;</result>
         <commentary xml:space="preserve">[1] open surge protector
@@ -1247,7 +1260,74 @@ You can see Crystal (on which is piece of crystal) here.
         <children><child nodeId="node-7119"></child>
             <child nodeId="node-7068"></child>
             <child nodeId="node-7202"></child>
+            <child nodeId="node-7587"></child>
         </children>
+    </item>
+    <item nodeId="node-7587">
+        <command xml:space="preserve">test six</command>
+        <result xml:space="preserve">(Testing.)
+
+&gt;[1] take piece of crystal
+Cautiously, you reach both hands towards the glowing orange piece of the crystal.
+
+&gt;[2] up
+
+Generator
+You can see trapdoor and Surge Protector (in which are On/Off Switch and Capacitors (in which are metal bar and faulty bar)) here.
+
+&gt;[3] up
+
+Cave Wall
+The end of the cave. A trapdoor sits flush in the ground, caked by a thin layer of moondust.
+
+You can see trapdoor here.
+
+&gt;[4] n
+
+The Badlands
+Just outside the city is a massive cave heading down. Around three stories tall, hundreds of feet wide. even more straight ahead. The sides of the cave are lit by long strips of LED displays, each solid neon green.
+
+&gt;[5] n
+
+HOME
+Your home is on the outskirts of the city. An old apartment 
+
+&gt;[6] n
+
+City Entrance
+A heavy, bustling steampunk atmosphere, densely populated by humans and cyborgs. There are clotheslines which stretch from building to building and wide, rusty metal pipes that clunkily wind around the walls. Embedded in a wall on the side of a road is a molecular splitter, where one can buy an oxygen tank. Leaning on the wall a few feet away from it stands a tall, flamboyant man.
+
+You can see a Walker and Molecular Splitter (empty) here.
+
+&gt;[7] n
+
+SURFACE
+
+
+    *** The moment you step foot outside the other end of the dome, the crystal in your hands starts to slowly levitate upwards. Stopping at around three feet in front of you, seven feet above the ground, it explodes, jettisoning orange shards out into space. ***
+
+
+
+Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
+&gt; </result>
+        <commentary xml:space="preserve">[1] take piece of crystal
+[2] up
+[3] up
+[4] n
+[5] n
+[6] n
+[7] n
+</commentary>
+        <children><child nodeId="node-7595"></child>
+        </children>
+    </item>
+    <item nodeId="node-7595">
+        <command xml:space="preserve">i</command>
+        <result xml:space="preserve">Please give one of the answers above.
+
+Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
+&gt; </result>
+        <commentary xml:space="preserve"></commentary>
     </item>
     <item nodeId="node-7202">
         <command xml:space="preserve">take piece of crystal</command>
@@ -1976,6 +2056,79 @@ The Core
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-7678">
+        <command xml:space="preserve">down</command>
+        <result xml:space="preserve">
+The Core
+A giant translucent orange crystal. This seems to be the main source of power for the city. 
+
+You can see Giant Crystal (on which is piece of crystal) here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7679"></child>
+        </children>
+    </item>
+    <item nodeId="node-7679">
+        <command xml:space="preserve">test six</command>
+        <result xml:space="preserve">(Testing.)
+
+&gt;[1] take piece of crystal
+Cautiously, you reach both hands towards the glowing orange piece of the crystal.
+
+&gt;[2] up
+
+Generator
+You can see trapdoor and Surge Protector (closed) here.
+
+&gt;[3] up
+
+Cave Wall
+The end of the cave. A trapdoor sits flush in the ground, caked by a thin layer of moondust.
+
+You can see trapdoor here.
+
+&gt;[4] n
+
+The Badlands
+Just outside the city is a massive cave heading down. Around three stories tall, hundreds of feet wide. even more straight ahead. The sides of the cave are lit by long strips of LED displays, each solid neon green.
+
+&gt;[5] n
+
+HOME
+Your home is on the outskirts of the city. An old apartment 
+
+&gt;[6] n
+
+City Entrance
+A heavy, bustling steampunk atmosphere, densely populated by humans and cyborgs. There are clotheslines which stretch from building to building and wide, rusty metal pipes that clunkily wind around the walls. Embedded in a wall on the side of a road is a molecular splitter, where one can buy an oxygen tank. Leaning on the wall a few feet away from it stands a tall, flamboyant man.
+
+You can see a Walker and Molecular Splitter (empty) here.
+
+&gt;[7] n
+
+SURFACE
+
+
+    *** The moment you step foot outside the other end of the dome, the crystal in your hands starts to slowly levitate upwards. Stopping at around three feet in front of you, seven feet above the ground, it explodes, jettisoning orange shards out into space. When the smoke clears, you see a tiny gray humanoid figure, hovering where the crystal was. "Thank you," it says, and takes off toward the constellation Orion.  You forgot to fix the generator, but that's alright. Not your problem anymore.
+
+YOU WIN ***
+
+
+
+
+Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
+&gt; </result>
+        <commentary xml:space="preserve">[1] take piece of crystal
+[2] up
+[3] up
+[4] n
+[5] n
+[6] n
+[7] n
+</commentary>
+        <children></children>
     </item>
     <item nodeId="node-6294">
         <command xml:space="preserve">tes four</command>
@@ -2789,6 +2942,7 @@ You can see a bucket (empty) and Handle here.
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
         <children><child nodeId="node-4753"></child>
+            <child nodeId="node-7494"></child>
             <child nodeId="node-4737"></child>
             <child nodeId="node-4644"></child>
             <child nodeId="node-5318"></child>
@@ -3392,6 +3546,48 @@ You can see trapdoor here.
     <item nodeId="node-4741">
         <command xml:space="preserve">connect bucket to well</command>
         <result xml:space="preserve">&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-7494">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+HOME
+Your home is on the outskirts of the city. An old apartment 
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7495"></child>
+        </children>
+    </item>
+    <item nodeId="node-7495">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">You can't go that way.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7496"></child>
+        </children>
+    </item>
+    <item nodeId="node-7496">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+City Entrance
+A heavy, bustling steampunk atmosphere, densely populated by humans and cyborgs. There are clotheslines which stretch from building to building and wide, rusty metal pipes that clunkily wind around the walls. Embedded in a wall on the side of a road is a molecular splitter, where one can buy an oxygen tank. Leaning on the wall a few feet away from it stands a tall, flamboyant man.
+
+You can see a Walker, Molecular Splitter (empty) and a coin here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7497"></child>
+        </children>
+    </item>
+    <item nodeId="node-7497">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+HOME
+Your home is on the outskirts of the city. An old apartment 
+
+&gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
     <item nodeId="node-4753">
