@@ -17,16 +17,26 @@ To say exit list:
 
 key is a thing. Player is carrying key. The description is "".
 
-HOME is a room. "Your home is on the outskirts of the city. An old apartment.".
+HOME is a room. "Your home is on the outskirts of the city. A really old, cramped apartment that's falling apart. Everything is falling apart, from the floor, to the sink, to the bed, everything. There is a jalousie window on the back wall. Its panes look clean. A single faded yellow lightbulb illuminates the whole room.".
+window is scenery in HOME. The description is "The city's edge. Only a few apartment buildings stand between where you are and the edge of the dome. There are hardly any lights here, aside from the streetlights on the road, leading to the city entrance.
+
+Beyond it, to the south, lie the Badlands, which go all the way down the cave.".
+lightbulb is scenery in HOME.
+Instead of turning lightbulb:
+	say "nonononononononono[line break]".
+sink is scenery in HOME. The description is "A small white porcelain sink, attached to the wall. There are two knobs, one for hot water and one for cold. A mirror sits above the sink, also flush in the wall.".
+mirror is scenery in HOME. The description is "Specks of dust line the edges of the rectangular mirror. You see yourself, the opposite wall, and the bed. Not much else.".
 Backpack is a portable container in HOME. It is closed and openable. It is wearable. The description is "A brown leather backpack.".
 metal bar is in Backpack. The description is "A one-foot-long metal bar.".
 rope is in Backpack. The description is "Twenty feet of beige-colored rope.".
-potato is in Backpack. potato is edible. The description is "A raw potato, wrapped in aluminum foil."
+potato is in Backpack. potato is edible. The description is "A raw potato, wrapped in aluminum foil.".
+Instead of eating potato:
+	say "You take a bite of the potato and let out an audible grunt of disgust. Not the most pleasant taste. You put ".
 
 The The Badlands is a room. The Badlands is south of HOME. "Just outside the city is a massive cave heading down. Around three stories tall, hundreds of feet wide. even more straight ahead. The sides of the cave are lit by long strips of LED displays, each solid neon green.".
 Cave Wall is a room. Cave Wall is south of The Badlands. "The end of the cave. A trapdoor sits flush in the ground, caked by a thin layer of moondust.".
 
-City Entrance is a room. City Entrance is north of HOME. "A heavy, bustling steampunk atmosphere, densely populated by humans and cyborgs. There are clotheslines which stretch from building to building and wide, rusty metal pipes that clunkily wind around the walls. Embedded in a wall on the side of a road is a molecular splitter, where one can buy an oxygen tank. Leaning on the wall a few feet away from it stands a tall, flamboyant man.".
+City Entrance is a room. City Entrance is north of HOME. "At the mouth of the cave, there's a heavy, bustling steampunk atmosphere, densely populated by humans and cyborgs. There are clotheslines which stretch from building to building and wide, rusty metal pipes that clunkily wind around the walls. Embedded in a wall on the side of a road is a molecular splitter, where one can buy an oxygen tank. Leaning on the wall a few feet away from it stands a tall, flamboyant man.".
 [getting space suit]
 A Walker is a male person in City Entrance. The description is "A rather tall man, about six-foot-four, wearing a brown dress shirt, black vest, deep blue jeans, black boots. Lanky too, and his strawberry blond hair goes down to his shoulders in waves. He appears pretty feminine.". Understand "man" as Walker.
 space suit is a thing. Walker is carrying space suit. Understand "spacesuit" as space suit. space suit is wearable.

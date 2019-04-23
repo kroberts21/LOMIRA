@@ -14,7 +14,7 @@ An Interactive Fiction by kroberts21
 Release 1 / Serial number 190422 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD
 
 HOME
-Your home is on the outskirts of the city. An old apartment.
+Your home is on the outskirts of the city. A really old, cramped apartment that's falling apart. Everything is falling apart, from the floor, to the sink, to the bed, everything. There is a jalousie window on the back wall. Its panes look clean. A single faded yellow lightbulb illuminates the whole room.
 
 You can see Backpack (closed) here.
 
@@ -37,10 +37,47 @@ You can see Backpack (closed) here.
             <child nodeId="node-4680"></child>
             <child nodeId="node-4660"></child>
             <child nodeId="node-5465"></child>
+            <child nodeId="node-7690"></child>
             <child nodeId="node-3478"></child>
             <child nodeId="node-7379"></child>
             <child nodeId="node-4825"></child>
+            <child nodeId="node-7687"></child>
+            <child nodeId="node-7692"></child>
         </children>
+    </item>
+    <item nodeId="node-7692">
+        <command xml:space="preserve">x window</command>
+        <result xml:space="preserve">The city's edge. Only a few apartment buildings stand between where you are and the edge of the dome. There are hardly any lights here, aside from the streetlights on the road, leading to the city entrance.
+
+Beyond it, to the south, lies the Badlands,
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-7687">
+        <command xml:space="preserve">x sink</command>
+        <result xml:space="preserve">A small white porcelain sink, attached to the wall. There are two knobs, one for hot water and one for cold. A mirror sits above the sink, also flush in the wall.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7688"></child>
+        </children>
+    </item>
+    <item nodeId="node-7688">
+        <command xml:space="preserve">x mirror</command>
+        <result xml:space="preserve">Specks of dust line the edges of the rectangular mirror. You see yourself, the opposite wall, and the 
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7689"></child>
+        </children>
+    </item>
+    <item nodeId="node-7689">
+        <command xml:space="preserve">x window</command>
+        <result xml:space="preserve">You see nothing special about window.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
     </item>
     <item nodeId="node-4825">
         <command xml:space="preserve">x me</command>
@@ -1019,6 +1056,13 @@ SURFACE
     <item nodeId="node-4816">
         <command xml:space="preserve">down</command>
         <result xml:space="preserve">You can't go that way.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-7690">
+        <command xml:space="preserve">turn lightbulb</command>
+        <result xml:space="preserve">nonononononononono
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
