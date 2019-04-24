@@ -11,7 +11,7 @@
 
 LOMIRA
 An Interactive Fiction by kroberts21
-Release 1 / Serial number 190422 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD
+Release 1 / Serial number 190424 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD
 
 HOME
 Your home is on the outskirts of the city. A really old, cramped apartment that's falling apart. Everything is falling apart, from the floor, to the sink, to the bed, everything. There is a jalousie window on the back wall. Its panes look clean. A single faded yellow lightbulb illuminates the whole room.
@@ -1062,7 +1062,25 @@ SURFACE
     </item>
     <item nodeId="node-7690">
         <command xml:space="preserve">turn lightbulb</command>
-        <result xml:space="preserve">nonononononononono
+        <result xml:space="preserve">You flinch, as it nearly burns your fingers.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7695"></child>
+        </children>
+    </item>
+    <item nodeId="node-7695">
+        <command xml:space="preserve">turn on lightbulb</command>
+        <result xml:space="preserve">It isn't something you can switch.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7696"></child>
+        </children>
+    </item>
+    <item nodeId="node-7696">
+        <command xml:space="preserve">take all</command>
+        <result xml:space="preserve">mm-mm.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -1078,6 +1096,8 @@ You put on Backpack.
 &gt;[2] w
 
 Well
+One of those old-timey wells made of bricks and a wooden frame, in the empty western part of the city. Examine the handle to learn how to use it.
+
 You can see a bucket (empty) and Handle here.
 
 &gt;[3] open backpack
@@ -1086,15 +1106,17 @@ You open Backpack, revealing metal bar, rope and potato.
 &gt;[4] take rope
 Taken.
 
-&gt;[5] put rope on bucket
+&gt;[5] tie rope to bucket
+Now you can connect the bucket to the well.
+
 &gt;[6] connect bucket to well
-tie
+You connect the bucket to the well.
 
 &gt;[7] push handle
-tie
+You push the handle, and the bucket goes into the well
 
 &gt;[8] pull handle
-tie
+helmet in bucket
 
 &gt;[9] take helmet
 Taken.
@@ -1102,14 +1124,14 @@ Taken.
 &gt;[10] e
 
 HOME
-Your home is on the outskirts of the city. An old apartment 
+Your home is on the outskirts of the city. A really old, cramped apartment that's falling apart. Everything is falling apart, from the floor, to the sink, to the bed, everything. There is a jalousie window on the back wall. Its panes look clean. A single faded yellow lightbulb illuminates the whole room.
 
 &gt;</result>
         <commentary xml:space="preserve">[1] put on backpack
 [2] w
 [3] open backpack
 [4] take rope
-[5] put rope on bucket
+[5] tie rope to bucket
 [6] connect bucket to well
 [7] push handle
 [8] pull handle
@@ -1126,12 +1148,12 @@ Your home is on the outskirts of the city. An old apartment
 &gt;[1] n
 
 City Entrance
-A heavy, bustling steampunk atmosphere, densely populated by humans and cyborgs. There are clotheslines which stretch from building to building and wide, rusty metal pipes that clunkily wind around the walls. Embedded in a wall on the side of a road is a molecular splitter, where one can buy an oxygen tank. Leaning on the wall a few feet away from it stands a tall, flamboyant man.
+At the mouth of the cave, there's a heavy, bustling steampunk atmosphere, densely populated by humans and cyborgs. There are clotheslines which stretch from building to building and wide, rusty metal pipes that clunkily wind around the walls. Embedded in a wall on the side of a road is a molecular splitter, where one can buy an oxygen tank. Leaning on the wall a few feet away from it stands a tall, flamboyant man.
 
 You can see a Walker, Molecular Splitter (empty) and a coin here.
 
 &gt;[2] talk to walker
-"Howdy!"
+"Hello there!"
 
 
 Ask him about:
@@ -1215,7 +1237,7 @@ You put on helmet.
 &gt;[4] s
 
 HOME
-Your home is on the outskirts of the city. An old apartment 
+Your home is on the outskirts of the city. A really old, cramped apartment that's falling apart. Everything is falling apart, from the floor, to the sink, to the bed, everything. There is a jalousie window on the back wall. Its panes look clean. A single faded yellow lightbulb illuminates the whole room.
 
 &gt;[5] s
 
@@ -1334,12 +1356,12 @@ Just outside the city is a massive cave heading down. Around three stories tall,
 &gt;[5] n
 
 HOME
-Your home is on the outskirts of the city. An old apartment 
+Your home is on the outskirts of the city. A really old, cramped apartment that's falling apart. Everything is falling apart, from the floor, to the sink, to the bed, everything. There is a jalousie window on the back wall. Its panes look clean. A single faded yellow lightbulb illuminates the whole room.
 
 &gt;[6] n
 
 City Entrance
-A heavy, bustling steampunk atmosphere, densely populated by humans and cyborgs. There are clotheslines which stretch from building to building and wide, rusty metal pipes that clunkily wind around the walls. Embedded in a wall on the side of a road is a molecular splitter, where one can buy an oxygen tank. Leaning on the wall a few feet away from it stands a tall, flamboyant man.
+At the mouth of the cave, there's a heavy, bustling steampunk atmosphere, densely populated by humans and cyborgs. There are clotheslines which stretch from building to building and wide, rusty metal pipes that clunkily wind around the walls. Embedded in a wall on the side of a road is a molecular splitter, where one can buy an oxygen tank. Leaning on the wall a few feet away from it stands a tall, flamboyant man.
 
 You can see a Walker and Molecular Splitter (empty) here.
 
@@ -1348,7 +1370,10 @@ You can see a Walker and Molecular Splitter (empty) here.
 SURFACE
 
 
-    *** The moment you step foot outside the other end of the dome, the crystal in your hands starts to slowly levitate upwards. Stopping at around three feet in front of you, seven feet above the ground, it explodes, jettisoning orange shards out into space. ***
+    *** The moment you step foot outside the other end of the dome, the crystal in your hands starts to slowly levitate upwards. Stopping at around three feet in front of you, seven feet above the ground, it explodes, jettisoning orange shards out into space. When the smoke clears, you see a tiny gray humanoid figure, hovering where the crystal was. "Thank you," it says, and takes off toward the constellation Orion. 
+
+YOU WIN ***
+
 
 
 
@@ -7099,7 +7124,7 @@ Badlands
         <command xml:space="preserve">n</command>
         <result xml:space="preserve">
 City Entrance
-A heavy, bustling steampunk atmosphere, densely populated by humans and cyborgs. There are clotheslines which stretch from building to building and wide, rusty metal pipes that clunkily wind around the walls. Embedded in a wall on the side of a road is a molecular splitter, where one can buy an oxygen tank. Leaning on the wall a few feet away from it stands a tall, flamboyant man.
+At the mouth of the cave, there's a heavy, bustling steampunk atmosphere, densely populated by humans and cyborgs. There are clotheslines which stretch from building to building and wide, rusty metal pipes that clunkily wind around the walls. Embedded in a wall on the side of a road is a molecular splitter, where one can buy an oxygen tank. Leaning on the wall a few feet away from it stands a tall, flamboyant man.
 
 You can see a Walker, Molecular Splitter (empty) and a coin here.
 
@@ -7165,12 +7190,100 @@ You can see Bucket and Crank here.
         <command xml:space="preserve">s</command>
         <result xml:space="preserve">
 HOME
+Your home is on the outskirts of the city. A really old, cramped apartment that's falling apart. Everything is falling apart, from the floor, to the sink, to the bed, everything. There is a jalousie window on the back wall. Its panes look clean. A single faded yellow lightbulb illuminates the whole room.
+
 You can see Backpack (closed) here.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
         <children><child nodeId="node-3556"></child>
+            <child nodeId="node-7699"></child>
         </children>
+    </item>
+    <item nodeId="node-7699">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+Well
+One of those old-timey wells made of bricks and a wooden frame, in the empty western part of the city. Examine the handle to learn how to use it.
+
+You can see a bucket (empty) and Handle here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7703"></child>
+        </children>
+    </item>
+    <item nodeId="node-7703">
+        <command xml:space="preserve">x handle</command>
+        <result xml:space="preserve">A wide vertical triangular handle, painted bright red.
+
+Push to drop the bucket in the well, pull to pull it out.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7704"></child>
+        </children>
+    </item>
+    <item nodeId="node-7704">
+        <command xml:space="preserve">push handle</command>
+        <result xml:space="preserve">The bucket isn't connected to the well. Try using something to connect it to the well.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7730"></child>
+        </children>
+    </item>
+    <item nodeId="node-7730">
+        <command xml:space="preserve">test one</command>
+        <result xml:space="preserve">(Testing.)
+
+&gt;[1] put on backpack
+You can't see any such thing.
+
+&gt;[2] w
+You can't go that way.
+
+&gt;[3] open backpack
+You can't see any such thing.
+
+&gt;[4] take rope
+You can't see any such thing.
+
+&gt;[5] put rope on bucket
+You can't see any such thing.
+
+&gt;[6] connect bucket to well
+The bucket isn't connected to the well. Try using something to connect it to the well.
+
+&gt;[7] push handle
+The bucket isn't connected to the well. Try using something to connect it to the well.
+
+&gt;[8] pull handle
+tie
+
+&gt;[9] take helmet
+Taken.
+
+&gt;[10] e
+
+HOME
+Your home is on the outskirts of the city. A really old, cramped apartment that's falling apart. Everything is falling apart, from the floor, to the sink, to the bed, everything. There is a jalousie window on the back wall. Its panes look clean. A single faded yellow lightbulb illuminates the whole room.
+
+You can see Backpack (closed) here.
+
+&gt;</result>
+        <commentary xml:space="preserve">[1] put on backpack
+[2] w
+[3] open backpack
+[4] take rope
+[5] put rope on bucket
+[6] connect bucket to well
+[7] push handle
+[8] pull handle
+[9] take helmet
+[10] e
+</commentary>
+        <children></children>
     </item>
     <item nodeId="node-3556">
         <command xml:space="preserve">s</command>

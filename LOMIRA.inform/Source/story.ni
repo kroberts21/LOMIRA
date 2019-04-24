@@ -23,13 +23,14 @@ window is scenery in HOME. The description is "The city's edge. Only a few apart
 Beyond it, to the south, lie the Badlands, which go all the way down the cave.".
 lightbulb is scenery in HOME.
 Instead of turning lightbulb:
-	say "nonononononononono[line break]".
+	say "You flinch, as it nearly burns your fingers.[line break]".
 sink is scenery in HOME. The description is "A small white porcelain sink, attached to the wall. There are two knobs, one for hot water and one for cold. A mirror sits above the sink, also flush in the wall.".
 mirror is scenery in HOME. The description is "Specks of dust line the edges of the rectangular mirror. You see yourself, the opposite wall, and the bed. Not much else.".
 Backpack is a portable container in HOME. It is closed and openable. It is wearable. The description is "A brown leather backpack.".
 metal bar is in Backpack. The description is "A one-foot-long metal bar.".
 rope is in Backpack. The description is "Twenty feet of beige-colored rope.".
 potato is in Backpack. potato is edible. The description is "A raw potato, wrapped in aluminum foil.".
+
 Instead of eating potato:
 	say "You take a bite of the potato and let out an audible grunt of disgust. Not the most pleasant taste. You put ".
 
@@ -39,7 +40,7 @@ Cave Wall is a room. Cave Wall is south of The Badlands. "The end of the cave. A
 City Entrance is a room. City Entrance is north of HOME. "At the mouth of the cave, there's a heavy, bustling steampunk atmosphere, densely populated by humans and cyborgs. There are clotheslines which stretch from building to building and wide, rusty metal pipes that clunkily wind around the walls. Embedded in a wall on the side of a road is a molecular splitter, where one can buy an oxygen tank. Leaning on the wall a few feet away from it stands a tall, flamboyant man.".
 [getting space suit]
 A Walker is a male person in City Entrance. The description is "A rather tall man, about six-foot-four, wearing a brown dress shirt, black vest, deep blue jeans, black boots. Lanky too, and his strawberry blond hair goes down to his shoulders in waves. He appears pretty feminine.". Understand "man" as Walker.
-space suit is a thing. Walker is carrying space suit. Understand "spacesuit" as space suit. space suit is wearable.
+space suit is a thing. Walker is carrying space suit. Understand "spacesuit" as space suit. space suit is wearable. The description is "It doesn't look like much of a space suit at first glance. It's a translucent periwinkle disk, shaped akin to restaurant pager.".
 Understand "talk to [someone]" as talking to.
 Talking to is an action applying to one visible thing.
 Check talking to: say "[The noun] doesn't reply.".
@@ -136,9 +137,9 @@ After putting:
 		say "You put the [the noun] in the bucket.";
 		move the noun to bucket.
 
-Well is a room. Well is southwest of City Entrance and west of HOME. "[bold type]Examine the handle to learn how to use it.".
+Well is a room. Well is southwest of City Entrance and west of HOME. "One of those old-timey wells made of bricks and a wooden frame, in the empty western part of the city. Examine the handle to learn how to use it.".
 a bucket is a thing in Well. it is an open container. The description is "A rusty steel bucket, around a foot in diameter.".
-xwell is an undescribed container in Well. It is open. The description is "[if player has space suit]the walker was right. [end if]helmet".
+xwell is an undescribed container in Well. It is open. The description is "[if player has space suit]The walker was right. [end if]A helmet lies at the bottom of the well.".
 helmet is a thing in xwell. helmet is wearable. Understand "the helmet" as helmet. The description is "Not at all how information-age media depicted space helmets. This one looks more like a gladiator helmet, but without the thing at the top. It looks prussian blue, but it's faded quite a lot."
 Understand "well" as xwell.
 Understand "look in [thing]" as examining.
@@ -168,7 +169,7 @@ After combining:
 			continue the action;
 	If the player's command matches "connect bucket to well":
 		If player is holding Rope or Rope is in Backpack:
-			say "tie[line break]";
+			say "The bucket isn't connected to the well. Try using something to connect it to the well.[line break]";
 		Otherwise:
 			say "You connect the bucket to the well.".
 After separating:
@@ -183,7 +184,7 @@ After separating:
 very very dark hole is a room.
 After pushing:
 	If player is holding Rope or Rope is in Backpack:
-		say "tie[line break]";
+		say "The bucket isn't connected to the well. Try using something to connect it to the well.[line break]";
 	Otherwise:
 		If the player's command matches "push handle":
 			say "You push the handle, and the bucket goes into the well[line break]";
@@ -232,7 +233,7 @@ After switching off:
 	If the player's command matches "turn switch off" or the player's command matches "switch off":
 		say "You switch it off.
 		
-		[bold type] Examine the capacitors.";
+		[bold type]Examine the capacitors.";
 		now On/Off Switch is switched off.
 After switching on:
 	If the player's command matches "turn switch on" or the player's command matches "switch on":
@@ -252,7 +253,7 @@ Instead of taking piece of crystal:
 	say "Cautiously, you reach both hands towards the glowing orange piece of the crystal.";
 	move piece of crystal to player.
 
-Test one with "put on backpack/w/open backpack/take rope/put rope on bucket/connect bucket to well/push handle/pull handle/take helmet/e".
+Test one with "put on backpack/w/open backpack/take rope/tie rope to bucket/connect bucket to well/push handle/pull handle/take helmet/e".
 Test two with "n/talk to walker/ask him about his life/ask him about his job/ask him for spacesuit/open backpack/take potato/give walker potato".
 Test three with "pick up coin/put coin in splitter".
 Test four with "put on oxygen tank/put on spacesuit/put on helmet/s/s/s/unlock trapdoor with key/down".
